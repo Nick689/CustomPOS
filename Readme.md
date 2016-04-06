@@ -11,6 +11,7 @@ A simple and efficient user interface is achieved by the use of listeners and li
 
 
 
+
 ##Features
 * Multi-user
 * Multi-session
@@ -69,7 +70,7 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 
-##License
+##[License](/License.md)
 CustomPOS is pubished under GNU GPLv2
 * You can copy and distribute this code as it is.
 * You can copy and modify this code for personal use.
