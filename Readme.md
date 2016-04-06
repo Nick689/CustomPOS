@@ -6,6 +6,7 @@ No data is stored on client side, you only have to backup the server database.
 A simple and efficient user interface is achieved by the use of listeners and listbox.
 
 
+
 ##Features
 * Multi-user
 * Multi-session
@@ -19,10 +20,12 @@ A simple and efficient user interface is achieved by the use of listeners and li
 * Secured "enough" for newbies
 
 
+
 ##Not planned features (unless you want to code it)
 * Items equivalence-replacement
 * Item group composition
 * Accounting
+
 
 
 ##Advancement
@@ -31,11 +34,14 @@ Most important features are already implemented, this program is already used in
 You should find a good reactivity/stability.
 Take care to fully debug/test new version on a test database before using in production.
 
+
+
 ##Performance
 Heavy loads are not yet tested.
 On i7-4770K server, MySQL is responding well with 5 users connected.
 I'm planning to move it on a i5-6260U + nvmeSSD
 There is 1 or 2 seconds lag in client printing functions.
+
 
 
 ##Planned features
@@ -48,11 +54,16 @@ There is 1 or 2 seconds lag in client printing functions.
 * Address book
 
 
+
 ##Install
 ...In construction
 
+
+
 ##Usage
 ...In construction
+
+
 
 ##License
 CustomPOS is pubished under GNU GPLv2
