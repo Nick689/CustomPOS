@@ -48,6 +48,12 @@ There is 1 or 2 seconds lag in client printing functions.
 * Address book
 
 
+##Install
+...In construction
+
+##Usage
+...In construction
+
 ##License
 CustomPOS is pubished under GNU GPLv2
 * You can copy and distribute this code as it is.
