@@ -1,2 +1,2 @@
 Facturation
-[Image!](preview/Facturation.png)
+[Facturation!](https://github.com/Nick689/CustomPOS/blob/master/Preview/Facturation.png)
