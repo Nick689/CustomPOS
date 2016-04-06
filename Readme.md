@@ -11,6 +11,8 @@ A simple and efficient user interface is achieved by the use of listeners and li
 * Multi-session
 * Easy data export
 * Easy to customize
+* PDF export
+* Barcode printing (code128)
 * One button EndofDay totals
 * Advanced user right management
 * Advanced pricing management with scenarios
