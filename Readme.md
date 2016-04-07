@@ -21,7 +21,6 @@ The interface is extremely efficient with only one page POS, there is no sub-pag
 * One button EndofDay totals
 * Advanced user right management
 * Advanced pricing management with scenarios
-* Secured "enough" for newbies
 
 
 
