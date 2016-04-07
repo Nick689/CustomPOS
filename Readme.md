@@ -73,7 +73,7 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 ##Usage
-Login:  Only one user is declared in default database: <root>    Password is managed by MySQL directly
+Login:  Only one user is declared in default database: <root>    Password is managed by MySQL.   You will have to grant new users.
 
 Special item:
  -  *DIV* is the reference for miscellaneous item, it has editable name
