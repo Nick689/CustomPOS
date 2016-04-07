@@ -66,8 +66,12 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 ##Usage
-...In construction
+*Login:*
+Only one user is declared in default database: <root>
+Pasword is managed by MySQL directly
 
+*Special item*
+<DIV> is the miscelaneous item, it has editable name
 
 
 ##[License](/License.md)
