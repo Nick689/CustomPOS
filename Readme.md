@@ -65,13 +65,14 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 
-##Usage
-*Login:*
-Only one user is declared in default database: <root>
-Pasword is managed by MySQL directly
 
-*Special item*
-<DIV> is the miscelaneous item, it has editable name
+##Usage
+*Login:*  Only one user is declared in default database: <root>
+  Pasword is managed by MySQL directly
+
+*Special item:* <DIV> is the miscelaneous item, it has editable name
+  (') Single quote at begning of the name indicate a comment
+
 
 
 ##[License](/License.md)
