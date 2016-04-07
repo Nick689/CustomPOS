@@ -73,7 +73,7 @@ Only one user is declared in default database: <root>
 
 Special item:
 *DIV* is the reference for miscelaneous item, it has editable name
-*'* Single quote at begning of the name indicate a comment
+'  Single quote at begning of the name indicate a comment
 
 
 
