@@ -1,9 +1,8 @@
 ##Description
 CustomPOS is a retail Point of Sale system.
-It is not really a program as it is only made of scripts.
-LibreOffice spreadsheet is used for GUI and MySQL for database.
-No data is stored on client side, you only have to backup the server database.
-A simple and efficient user interface is achieved by the use of listeners and listbox.
+It is not really a program as it is only made of a spreadsheet with scripts.
+LibreOffice is used for GUI and MySQL for database. No data is stored on client side. you only have to backup the server database.
+The interface is extremely efficient with only one page POS, there is no sub-page, only one pop-up confirmation message will be displayed before invoice validation.
 
 
 
