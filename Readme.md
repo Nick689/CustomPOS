@@ -34,7 +34,7 @@ A simple and efficient user interface is achieved by the use of listeners and li
 
 
 ##Advancement
-Only french version is curently available.
+Only French version is currently available.
 Most important features are already implemented, this program is already used in production.
 You should find a good reactivity/stability.
 Take care to fully debug/test new version on a test database before using in production.
@@ -68,16 +68,16 @@ There is 1 or 2 seconds lag in client printing functions.
 
 ##Usage
 Login:
- - Only one user is declared in default database: <root>    Pasword is managed by MySQL directly
+ - Only one user is declared in default database: <root>    Password is managed by MySQL directly
 
 Special item:
- -  *DIV* is the reference for miscelaneous item, it has editable name
- -  '  Single quote at begning of the name indicate a comment
+ -  *DIV* is the reference for miscellaneous item, it has editable name
+ -  '  Single quote at beginning of the name indicate a comment
 
 
 
 ##[License](/License.md)
-CustomPOS is pubished under GNU GPLv2
+CustomPOS is published under GNU GPLv2
 * You can copy and distribute this code as it is.
 * You can copy and modify this code for personal use.
 * If you distribute a program using a modified version of this code you have to publish your code under the same GPL license.
