@@ -52,6 +52,8 @@ There is 1 or 2 seconds lag in client printing functions.
 ##Limitations
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)
+* Max number of item per invoice: 100 (limited by mysql connector)
+* Number of reference per item: 6 (can be extended)
 
 
 
