@@ -74,10 +74,10 @@ There is 1 or 2 seconds lag in client printing functions.
 Login:  Only one user is declared in default database: <root>    Password is managed by MySQL.   You will have to grant new users.
 
 Special item:
- -  *DIV* is the reference for miscellaneous item, it has editable name
- -  '  Single quote at beginning of the name indicate a comment
+ -  *DIV* is the reference for miscellaneous item, it has editable name.
+ -  '  Single quote at beginning of the name indicate a comment.
 
-
+Barcode:  Delete any zero at the beginning of barcodes otherwise it will not work.
 
 ##[License](License.md)
 CustomPOS is published under GNU GPLv2
