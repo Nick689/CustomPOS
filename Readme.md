@@ -24,6 +24,15 @@ The interface is extremely efficient with only one page POS, there is no sub-pag
 
 
 
+##Planned features
+* Multilingual management
+* Windows, OSX version
+* Stronger security with the use of macro protection but only available in OpenOffice, not in LibreOffice !??
+* Statistics
+* Address book
+
+
+
 ##Not planned features (unless you want to code it)
 * Items equivalence-replacement
 * Item group composition
@@ -52,15 +61,6 @@ There is 1 or 2 seconds lag in client printing functions.
 * Max number of sold item: 18446744073709551615 BIGINT(20)
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
-
-
-
-##Planned features
-* Multilingual management
-* Windows, OSX version
-* Stronger security with the use of macro protection but only available in OpenOffice, not in LibreOffice !??
-* Statistics
-* Address book
 
 
 
