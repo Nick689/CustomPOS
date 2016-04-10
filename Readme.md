@@ -72,9 +72,8 @@ There is 1 or 2 seconds lag in client printing functions.
 ##Usage
 Login:  Only one user is declared in default database: <root>    Password is managed in MySQL.   You will have to grant new users.
 
-Special item:
- -  *DIV* is the reference for miscellaneous item, it has editable name.
- -  '  Single quote at beginning of the name indicate a comment.
+Special item: -  *DIV* is the reference for miscellaneous item, it has editable name.
+-  '  Single quote at the beginning of the name indicate a comment.
 
 Quantity management:  Before adjusting quantity on item's record you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and difference with current quantity for every items. It is advised to keep adjusted yours sales/arrivals records instead of forcing item's quantity without justification.
 
