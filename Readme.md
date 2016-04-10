@@ -76,7 +76,7 @@ Special items:
 *  *DIV* is the reference for miscellaneous item, it has editable name.
 *  '  Single quote at the beginning of the name indicate a comment.
 
-Quantity management:  Before adjusting quantity on item's record you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and difference with current quantity for every items. It is advised to keep adjusted yours sales/arrivals records instead of forcing item's quantity without justification.
+Quantity management:  Before adjusting item record quantity you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and difference with current quantity for every items. It is advised to keep adjusted yours sales/arrivals records instead of forcing item's quantity without justification.
 
 Inventory:  There is no inventory module. "Inventory" is managed in CustomPOS as a special customer whose every invoiced item will be 0 priced (the purpose for "FREE" button).
 
