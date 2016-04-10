@@ -2,7 +2,7 @@
 CustomPOS is a retail Point of Sale system.
 It is not really a program as it is only a spreadsheet with macros.
 LibreOffice is used for GUI and MySQL for database. No data is stored in client side. You only have to backup the server database.
-The interface is extremely efficient with only one page POS, there is no sub-page, only one pop-up confirmation message will be displayed before invoice validation.
+The GUI is extremely efficient with only one page POS, there is no sub-page, only one pop-up confirmation message will be displayed before invoice validation.
 
 
 
@@ -41,6 +41,7 @@ The interface is extremely efficient with only one page POS, there is no sub-pag
 
 
 ##Advancement
+The item edit page does not exist yet, but you can edit the database directly.
 Only Linux-French version is currently available.
 Most important features are already implemented, this program is already used in production.
 You should find a good reactivity/stability.
@@ -74,6 +75,14 @@ Login:  Only one user is declared in default database: <root>    Password is man
 Special item:
  -  *DIV* is the reference for miscellaneous item, it has editable name.
  -  '  Single quote at beginning of the name indicate a comment.
+
+Quantity management:  Before adjusting quantity on item's record you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and difference with current quantity for every items. It is advised to keep adjusted yours sales/arrivals records instead of forcing item's quantity without justification.
+
+Inventory:  There is no inventory module. "Inventory" is managed in CustomPOS as a special customer whose every invoiced item will be 0 priced (the reason for "FREE" button).
+
+Stock moving, stock management:  See "Inventory", same operation.
+
+
 
 Barcode:  Delete any zero at the beginning of barcodes otherwise it will not work.
 
