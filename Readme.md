@@ -14,13 +14,13 @@ The interface is extremely efficient with only one page POS, there is no sub-pag
 ##Features
 * Multi-user
 * Multi-session
-* Easy data export
-* Easy to customize
+* Data export has never been so easy, you are already in Calc
+* Easy to customize with easy macro code
 * PDF export
 * Barcode printing (code128)
-* One button EndofDay totals
+* You will be surprised by the efficiency of the cash register check page
 * Advanced user right management
-* Advanced pricing management with scenarios
+* Advanced pricing management with selectable scenarios for each item
 
 
 
