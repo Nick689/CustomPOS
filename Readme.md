@@ -49,9 +49,7 @@ Take care to fully debug/test new version on a test database before using in pro
 
 
 ##Performance
-Heavy loads are not yet tested.
-On i7-4770K server, MySQL is responding well with 5 users connected.
-I'm planning to move it on a i5-6260U + nvmeSSD.
+Heavy loads are not yet tested. MySQL is responding well on a i7-4770K server with 5 users connected.
 There is 1 or 2 seconds lag in client printing functions.
 
 
