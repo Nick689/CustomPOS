@@ -81,9 +81,7 @@ Inventory:  There is no inventory module. "Inventory" is managed in CustomPOS as
 
 Stock moving, stock management:  See "Inventory", same operation.
 
-
-
-Barcode:  Delete any zero at the beginning of barcodes otherwise it will not work.
+Barcode:  Delete any zero at the beginning of barcodes record otherwise it will not work.
 
 ##[License](License.md)
 CustomPOS is published under GNU GPLv2
