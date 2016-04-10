@@ -32,7 +32,7 @@ The interface is extremely efficient with only one page POS, there is no sub-pag
 
 
 ##Advancement
-Only French version is currently available.
+Only Linux-French version is currently available.
 Most important features are already implemented, this program is already used in production.
 You should find a good reactivity/stability.
 Take care to fully debug/test new version on a test database before using in production.
@@ -56,12 +56,10 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 ##Planned features
-* Stronger security with the use of macro protection but only available in OpenOffice, not in LibreOffice !??
 * Multilingual management
-* Statistics per item
-* Statistics per customer
-* Statistics per period
-* Statistics per branch
+* Windows, OSX version
+* Stronger security with the use of macro protection but only available in OpenOffice, not in LibreOffice !??
+* Statistics
 * Address book
 
 
@@ -81,7 +79,7 @@ Special item:
 
 
 
-##[License](/License.md)
+##[License](License.md)
 CustomPOS is published under GNU GPLv2
 * You can copy and distribute this code as it is.
 * You can copy and modify this code for personal use.
