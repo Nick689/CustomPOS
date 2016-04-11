@@ -33,7 +33,7 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 
 
 
-##Not planned features (unless you want to code it)
+##Not planned features
 * Items equivalence-replacement
 * Item group composition
 * Accounting
