@@ -43,7 +43,7 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 ##Advancement
 The item edit page does not exist yet, but you can edit the database directly.
 Only Linux-French version is currently available.
-Most important features are already implemented, this program is already used in production.
+Most important features are already implemented and this program is already used in production.
 You should find a good reactivity/stability.
 Take care to fully debug/test new version on a test database before using in production.
 
