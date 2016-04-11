@@ -1,1 +1,1 @@
-![ScreenShot](Preview/POS.png)
+![17618](Preview/17618.png)
