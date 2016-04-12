@@ -6,7 +6,7 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 
 
 
-##[Screenshot](https://github.com/Nick689/CustomPOS/wiki/Screenshot)
+##[Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
 
 
