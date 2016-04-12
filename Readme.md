@@ -78,7 +78,7 @@ Special items:
 
 Quantity management:  Before adjusting item quantity record you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and difference with current quantity for every items. It is advised to keep adjusted yours sales/arrivals records instead of forcing item quantity record without justification.
 
-Inventory:  There is no inventory module. "Inventory" is managed in CustomPOS as a special customer whose every invoiced item will be 0 priced (the purpose for "FREE" button).
+Inventory:  There is no inventory module. "Inventory" is managed in CustomPOS as a special customer whose every invoiced item will be 0 priced (the purpose for the "FREE" button).
 
 Stock moving, stock management:  See "Inventory", operate the same way.
 
