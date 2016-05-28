@@ -27,7 +27,6 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 ##Planned features
 * Multilingual management
 * Windows, OSX version
-* Stronger security with the use of macro protection but only available in OpenOffice, not in LibreOffice !??
 * Statistics
 * Address book
 
