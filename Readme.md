@@ -18,7 +18,7 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 * Easy to customize with easy macro code
 * PDF export
 * Barcode printing (code128)
-* You will be surprised by the efficiency of the cash register check page
+* Cash register check with detailed incomes for each cashier and daily totals
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 
