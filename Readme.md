@@ -56,7 +56,7 @@ Login:  Only one user is declared in default database. Passwords are managed in 
 ##Usage
 Quantity check:  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
-Inventory:  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed quantity of 0 priced item (the purpose for the "FREE" button).
+Inventory:  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed item quantity with 0 for price (the purpose for the "FREE" button).
 
 Stock moving, stock management:  See "Inventory", operate the same way.
 
