@@ -14,11 +14,11 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 ##Features
 * Multi-user
 * Multi-session
-* Data export has never been so easy, you are already in Calc
 * Easy to customize with easy macro code
-* PDF export
-* Barcode printing (code128)
-* Cash register check with detailed incomes for each cashier and daily totals
+* Built-in PDF export
+* Barcode printing (code128 only)
+* Cash register check fit in one printable page and support multiple cashier 
+* Data export has never been so easy, you are already in Calc
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 
