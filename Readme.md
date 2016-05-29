@@ -56,19 +56,12 @@ There is 1 or 2 seconds lag in client printing functions.
 
 
 
-##Install
-...In construction
-
+##Install (In construction)
+Login:  Only one user is declared in default database. Passwords are managed in MySQL. You will have to grant new users in MySQL.
 
 
 
 ##Usage
-Login:  Only one user is declared in default database. Passwords are managed in MySQL. You will have to grant new users in MySQL.
-
-Special items:
-*  *DIV* is the reference for miscellaneous item, it has editable name.
-*  '  Single quote at the beginning of the name indicate a comment.
-
 Quantity check:  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
 Inventory:  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed quantity of 0 priced item (the purpose for the "FREE" button).
@@ -77,6 +70,10 @@ Stock moving, stock management:  See "Inventory", operate the same way.
 
 Barcode:  Delete any zero at the beginning of barcodes record otherwise it will not work.
 Linux user have to disable shift key while scanning case sensitive barcodes.
+
+Special items:
+*  *DIV* is the reference for miscellaneous item, it has editable name.
+*  '  Single quote at the beginning of the name indicate a comment.
 
 ##[License](License.md)
 CustomPOS is published under GNU GPLv2
