@@ -45,6 +45,7 @@ Only Linux-French version is currently available.
 Most important features are already implemented and this program is already used in production.
 You should find a good reactivity/stability.
 Take care to fully debug/test new version on a test database before using in production.
+The program's code is not yet locked and can be hacked by advanced users.
 
 
 
