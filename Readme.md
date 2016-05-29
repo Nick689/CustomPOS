@@ -44,13 +44,13 @@ The item edit page does not exist yet, but you can edit the database directly.
 Only Linux-French version is currently available.
 Most important features are already implemented and this program is already used in production.
 You should find a good reactivity/stability.
-Take care to fully debug/test new version on a test database before using in production.
-The program's code is not yet locked and can be hacked by advanced users.
+Take care to fully debug/test new version on a testing database before using in production.
+The program's code is not yet securely locked and can be hacked by advanced users.
 
 
 
 ##Performance
-Heavy loads are not yet tested. MySQL is responding well on a i7-4770K server with 5 users connected.
+Although CustomPOS could support an unlimited number of users and do not load heavily the server, it is not recommanded for big companies, considering that LibreOffice has features that can not all be locked.
 There is 1 or 2 seconds lag in client printing functions.
 
 
