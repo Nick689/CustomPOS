@@ -32,13 +32,6 @@ The GUI is extremely efficient with only one page POS, there is no sub-page, onl
 
 
 
-##Not planned features
-* Items equivalence-replacement
-* Item group composition
-* Accounting
-
-
-
 ##Advancement
 The item edit page does not exist yet, but you can edit the database directly.
 Only Linux-French version is currently available.
