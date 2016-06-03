@@ -17,7 +17,7 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 * Easy to customize with easy macro code
 * Built-in PDF export
 * Barcode printing (code128 only)
-* Cash register check fit in one page with multi-cashiers support
+* Detailed cash register check that fit in one page
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
@@ -25,7 +25,7 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 
 
 ##Planned features
-* Multilingual management
+* Multilingual version
 * Windows, OSX version
 * Statistics
 * Address book
