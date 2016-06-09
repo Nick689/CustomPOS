@@ -25,8 +25,8 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 
 
 ##Planned features
-* Multilingual version
-* Windows, OSX version
+* Localized versions
+* Windows, OSX versions
 * Statistics
 * Address book
 
