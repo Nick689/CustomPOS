@@ -32,8 +32,8 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 
 
 
-##Performance, Advancement
-Only Linux-French version is currently available. The item edit page does not exist yet, but you can edit the database directly. Most important features are implemented and this program is already used in production. You should find a comfortable reactivity and stability, but each change can break everything. And you should fully debug/test new version on a testing database before using it in production.
+##Advancement
+Only Linux-French version is currently available. The item edit page does not exist yet, but you can edit the database directly. Most important features are implemented and this program is already used in production. You should find a comfortable reactivity and stability.
 
 Despite CustomPOS's powerful features with unlimited number of users and a light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that can not all be locked and advanced users can hack it.
 There is also 1 or 2 seconds lag in client printing functions.
