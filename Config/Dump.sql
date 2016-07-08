@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `mybase`
+CREATE DATABASE  IF NOT EXISTS `mybase`;
 USE `mybase`;
 
 DROP TABLE IF EXISTS `customer`;
