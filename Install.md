@@ -1,9 +1,9 @@
 ##Install (In construction)
 
-sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
-sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
-sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
-sudo fc-cache -f -v                                               #will recharge font list
+- sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
+- sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
+- sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
+- sudo fc-cache -f -v                                               #will recharge font list
 
 Login:  Only one user is declared in default database. Passwords are managed in MySQL. You will have to grant new users in MySQL.
 
