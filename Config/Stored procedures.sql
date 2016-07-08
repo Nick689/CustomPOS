@@ -1,6 +1,6 @@
 DELIMITER $$
-DROP PROCEDURE IF EXISTS mybasechk$$
-CREATE PROCEDURE mybasechk()
+DROP PROCEDURE IF EXISTS chk$$
+CREATE PROCEDURE chk()
 BEGIN
 DECLARE done, refid  INT DEFAULT 0;
 DECLARE entree,vente,quant DECIMAL(10,3);
@@ -38,9 +38,10 @@ END $$
 DELIMITER ;
 
 
+
 DELIMITER $$
-DROP PROCEDURE IF EXISTS mybasesoldes$$
-CREATE PROCEDURE mybasesoldes()
+DROP PROCEDURE IF EXISTS soldes$$
+CREATE PROCEDURE soldes()
 BEGIN
 DECLARE done,cli,tot,rend INT DEFAULT 0;
 DECLARE cur1 CURSOR FOR SELECT numclient,ttc FROM mybase.fact WHERE typefact='Crédit';
@@ -68,12 +69,13 @@ END $$
 DELIMITER ;
 
 
+
 DELIMITER $$
-DROP PROCEDURE IF EXISTS mybasefdj$$
-CREATE PROCEDURE mybasefdj(IN jour DATE)
+DROP PROCEDURE IF EXISTS fdj$$
+CREATE PROCEDURE fdj(IN jour DATE)
 BEGIN
 DECLARE done,p1,p2,p3,p4,esp,chq,cb,vir,rend,tax INT DEFAULT 0;
-DECLARE qt,ht,ht0,ht1,ht2 DECIMAL(10,3) DEFAULT 0.000;
+DECLARE qt,ht,ht0,ht1,ht2,ht3 DECIMAL(10,3) DEFAULT 0.000;
 DECLARE m1,m2,m3,m4,util VARCHAR(10) DEFAULT 0;
 DECLARE cur1 CURSOR FOR SELECT utilisateur FROM mybase.regl WHERE `dateregl`=jour;
 DECLARE cur2 CURSOR FOR SELECT utilisateur,pay1,pay2,pay3,pay4,mode1,mode2,mode3,mode4,rendu FROM mybase.fact WHERE DATE(`datefact`)=jour;
@@ -162,10 +164,11 @@ loop5: LOOP
 	WHEN 0 THEN SET ht0=ht0+qt*ht;
 	WHEN 1 THEN SET ht1=ht1+qt*ht;
 	WHEN 2 THEN SET ht2=ht2+qt*ht;
+	WHEN 3 THEN SET ht3=ht3+qt*ht;
 	ELSE BEGIN END;
 	END CASE;
 END LOOP loop5;
 CLOSE cur5;
-UPDATE mybase.output SET `dec1`=ht1,`dec2`=ht2,`dec3`=ht0 WHERE `id`=1;
+UPDATE mybase.output SET `dec1`=ht1,`dec2`=ht2,`dec3`=ht3,`dec4`=ht0 WHERE `id`=1;
 END $$
 DELIMITER ;
