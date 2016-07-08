@@ -1,17 +1,7 @@
-CREATE DATABASE  IF NOT EXISTS `mybase` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE  IF NOT EXISTS `mybase`
 USE `mybase`;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `customer`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `customer` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `nom` varchar(30) DEFAULT NULL,
@@ -34,14 +24,11 @@ CREATE TABLE `customer` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `nom` (`nom`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1079 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `customer` VALUES (100,'Client divers','Particulier',1,'','',NULL,NULL,0.000,0,0,'Fin du mois',NULL,NULL,NULL,NULL,'',0);
 INSERT INTO `customer` VALUES (101,'Xarra','Revendeur',0,'','',NULL,NULL,0.200,1,500000,'1 mois',NULL,NULL,NULL,NULL,'',0);
 INSERT INTO `customer` VALUES (102,'Osborn','Particulier',0,'','',NULL,NULL,0.100,1,500000,'2 mois',NULL,NULL,NULL,NULL,'',0);
+
 DROP TABLE IF EXISTS `devis`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `devis` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `datedev` date NOT NULL,
@@ -62,12 +49,9 @@ CREATE TABLE `devis` (
   `facture` bigint(20) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=895 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `devis` VALUES (894,'2016-04-05','root',100,'Client divers','','','','',364,0,0,58,0,0,422,NULL);
+
 DROP TABLE IF EXISTS `devisdet`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `devisdet` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `devis` int(10) unsigned NOT NULL,
@@ -84,13 +68,10 @@ CREATE TABLE `devisdet` (
   PRIMARY KEY (`id`),
   KEY `devis` (`devis`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6588 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `devisdet` VALUES (6586,894,23,'ASSC','ASSIETTE 23CM CREUSE',1.000,0.160,0.100,200.000,181.818,0,0);
 INSERT INTO `devisdet` VALUES (6587,894,234,'ASSP','ASSIETTE 23CM PLATE',1.000,0.160,0.100,200.000,181.818,0,0);
+
 DROP TABLE IF EXISTS `entree`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `entree` (
   `entree` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `dateentr` date NOT NULL,
@@ -100,11 +81,8 @@ CREATE TABLE `entree` (
   `totrev` int(10) DEFAULT NULL,
   PRIMARY KEY (`entree`)
 ) ENGINE=InnoDB AUTO_INCREMENT=380 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 DROP TABLE IF EXISTS `entreedet`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `entreedet` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `entree` smallint(5) unsigned NOT NULL,
@@ -121,11 +99,8 @@ CREATE TABLE `entreedet` (
   KEY `entree` (`entree`),
   KEY `refint` (`refint`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1889 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 DROP TABLE IF EXISTS `fact`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fact` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `datefact` datetime NOT NULL,
@@ -166,13 +141,10 @@ CREATE TABLE `fact` (
   PRIMARY KEY (`id`),
   KEY `numclient` (`numclient`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17620 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `fact` VALUES (17618,'2016-04-05 20:18:41','root',100,'Particulier','Client divers','','','',422,58,0,0,1000,0,0,0,'ESP','','','',578,'COMPTANT',NULL,'',0,'',0,0,0,0,'',364,0,0,364);
 INSERT INTO `fact` VALUES (17619,'2016-04-05 21:07:22','root',102,'Particulier','Osborn','','','',2464,340,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,'CRÉDIT','2016-06-15','',0,'',NULL,NULL,NULL,NULL,'',2124,0,0,2124);
+
 DROP TABLE IF EXISTS `factdet`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `factdet` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `facture` bigint(20) unsigned NOT NULL,
@@ -195,29 +167,23 @@ CREATE TABLE `factdet` (
   KEY `facture` (`facture`),
   KEY `refint` (`refint`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18706 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `factdet` VALUES (18701,17618,'2016-04-05',100,'Client divers',23,'ASSC','ASSIETTE 23CM CREUSE',1.000,0.160,0.100,200.000,181.818,0,0,100.000,1);
 INSERT INTO `factdet` VALUES (18702,17618,'2016-04-05',100,'Client divers',234,'ASSP','ASSIETTE 23CM PLATE',1.000,0.160,0.100,200.000,181.818,0,0,100.000,1);
 INSERT INTO `factdet` VALUES (18703,17619,'2016-04-05',102,'Osborn',23,'ASSC','ASSIETTE 23CM CREUSE',1.000,0.160,0.000,200.000,200.000,0,0,100.000,1);
 INSERT INTO `factdet` VALUES (18704,17619,'2016-04-05',102,'Osborn',234,'ASSP','ASSIETTE 23CM PLATE',1.000,0.160,0.000,200.000,200.000,0,0,100.000,1);
 INSERT INTO `factdet` VALUES (18705,17619,'2016-04-05',102,'Osborn',100,'DIV','EDITABLE',1.000,0.160,0.000,0.862,1724.138,0,0,1.000,1);
+
 DROP TABLE IF EXISTS `fourn`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fourn` (
   `id` smallint(5) NOT NULL,
   `nom` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `fourn` VALUES (101,'FOURN1');
 INSERT INTO `fourn` VALUES (102,'FOURN2');
 INSERT INTO `fourn` VALUES (103,'FOURN3');
+
 DROP TABLE IF EXISTS `output`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `output` (
   `id` tinyint(1) unsigned NOT NULL,
   `entier1` int(10) DEFAULT NULL,
@@ -229,12 +195,9 @@ CREATE TABLE `output` (
   `letter` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `output` VALUES (1,NULL,NULL,NULL,0.000,0.000,0.000,NULL);
+
 DROP TABLE IF EXISTS `regl`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `regl` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `dateregl` date NOT NULL,
@@ -250,12 +213,9 @@ CREATE TABLE `regl` (
   PRIMARY KEY (`id`),
   KEY `numclient` (`numclient`)
 ) ENGINE=InnoDB AUTO_INCREMENT=164 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `regl` VALUES (163,'2016-04-05',102,'CHQ',2464,17619,'','root','Osborn',0,11111);
+
 DROP TABLE IF EXISTS `stk`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `stk` (
   `refint` mediumint(7) NOT NULL AUTO_INCREMENT,
   `refmag` varchar(13) NOT NULL,
@@ -294,15 +254,12 @@ CREATE TABLE `stk` (
   UNIQUE KEY `ref5` (`ref5`),
   UNIQUE KEY `ref6` (`ref6`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1072 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `stk` VALUES (1,'FT',NULL,NULL,NULL,NULL,'Service','FRET',NULL,0.000,101,0.0,0.0,0.000,0.000,0.000,NULL,'LIBRE',2,0.000,0.000,0.000,88.496,NULL,NULL,NULL,NULL,NULL,NULL,-1);
 INSERT INTO `stk` VALUES (23,'ASSC','3550190401615','3011AF06A',NULL,NULL,'Cuisine','ASSIETTE 23CM CREUSE',NULL,100.000,102,0.0,0.0,98.000,100.000,0.000,NULL,'LIBRE',1,0.000,100.000,100.000,200.000,NULL,NULL,NULL,NULL,NULL,NULL,1);
 INSERT INTO `stk` VALUES (100,'DIV',NULL,NULL,NULL,NULL,'Divers','DIVERS',NULL,0.000,0,0.0,0.0,-1.000,0.000,0.000,NULL,'LIBRE',1,0.000,1.000,1.000,0.862,NULL,NULL,NULL,NULL,NULL,NULL,-1);
 INSERT INTO `stk` VALUES (234,'ASSP','80576050098','3010AF06A',NULL,NULL,'Cuisine','ASSIETTE 23CM PLATE',NULL,29.000,102,0.0,0.0,27.000,29.000,0.000,NULL,'LIBRE',1,0.000,100.000,100.000,200.000,NULL,NULL,NULL,0.472,NULL,NULL,1);
+
 DROP TABLE IF EXISTS `utilisateur`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `utilisateur` (
   `id` varchar(5) NOT NULL,
   `nom` varchar(13) NOT NULL,
@@ -324,15 +281,5 @@ CREATE TABLE `utilisateur` (
   `print` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 INSERT INTO `utilisateur` VALUES ('root','root',1,1,1,1,1,1,1,1,1,0,88,0,0,0,0,0);
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
