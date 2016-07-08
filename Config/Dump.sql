@@ -186,13 +186,10 @@ INSERT INTO `fourn` VALUES (103,'FOURN3');
 DROP TABLE IF EXISTS `output`;
 CREATE TABLE `output` (
   `id` tinyint(1) unsigned NOT NULL,
-  `entier1` int(10) DEFAULT NULL,
-  `entier2` int(10) DEFAULT NULL,
-  `entier3` int(10) DEFAULT NULL,
   `dec1` decimal(10,3) DEFAULT NULL,
   `dec2` decimal(10,3) DEFAULT NULL,
   `dec3` decimal(10,3) DEFAULT NULL,
-  `letter` varchar(30) DEFAULT NULL,
+  `dec4` decimal(10,3) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 INSERT INTO `output` VALUES (1,NULL,NULL,NULL,0.000,0.000,0.000,NULL);
