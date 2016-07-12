@@ -34,7 +34,7 @@ FLUSH PRIVILEGES;
 ```
 source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
 ```
-- Add the directory where is CustomPOS.ods in Tools/LibreOffice/Security/MacroSecurity/TrustedSource/TrustedFileLocations
+- Select "High security" in Tools/LibreOffice/Security/MacroSecurity and add the directory where is CustomPOS.ods in Trusted Locations
 - sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
 - sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
 - sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
