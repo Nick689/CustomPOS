@@ -1,7 +1,7 @@
 #INSTALL (In construction)
 ##Server:
 - sudo apt-get install mysql-server
-- Default MySQL settings work. no need to change anything, but you should change IP and port
+- Default MySQL settings works, no need to change anything, except IP and port
 
 ##Administrator:
 - Install **MySQLworkbench** or any mysql manager
