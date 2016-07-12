@@ -30,7 +30,7 @@ FLUSH PRIVILEGES;
 - Install libreoffice-calc
 - Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
-- Add Database.odb to your database list or create a new database connection and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function:
+- Add Database.odb to your database list or create a new database connection and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function and save setting in different .ods files:
 ```
 source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
 ```
