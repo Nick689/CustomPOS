@@ -31,7 +31,9 @@ FLUSH PRIVILEGES;
 - Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
 - Add Database.odb to your database list or create a new database connection and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function:
-```source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")```
+```
+source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
+```
 - Add the directory where is CustomPOS.ods in Tools/LibreOffice/Security/MacroSecurity/TrustedSource/TrustedFileLocations
 - sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
 - sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
