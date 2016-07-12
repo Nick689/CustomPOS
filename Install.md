@@ -6,8 +6,9 @@
 - Install **MySQLworkbench** or any mysql manager
 - Inject **Dump.sql** using your prefered mysql manager
 - Inject **Stored procedures.sql** using your prefered mysql manager
-- Create and grant new users with this type of privileges:
+- Create and grant new users in this manner:
 ```
+CREATE USER 'newuser'@'ip' IDENTIFIED BY 'password';
 GRANT SELECT,UPDATE ON mybase.customer TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.devis TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.devisdet TO 'user'@'ip';
