@@ -1,7 +1,7 @@
-#Install (In construction)
-##SERVER:
+#INSTALL (In construction)
+##Server:
 - sudo apt-get install mysql-server
-##ADMINISTRATOR:
+##Administrator:
 - Install **MySQLworkbench** or any mysql manager
 - Inject **Dump.sql** using your prefered mysql manager
 - Inject **Stored procedures.sql** using your prefered mysql manager
@@ -24,7 +24,7 @@ GRANT EXECUTE ON PROCEDURE mybase.soldes TO 'user'@'ip';
 GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'user'@'ip';
 FLUSH PRIVILEGES;
 ```
-##CLIENT:
+##Client:
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
 - Add the directory where is CustomPOS.ods in Tools/LibreOffice/Security/MacroSecurity/TrustedSource/TrustedFileLocations
 - sudo apt-get install libreoffice-calc
@@ -36,7 +36,7 @@ FLUSH PRIVILEGES;
 
 
 
-#Settings (In construction)
+#SETTINGS (In construction)
 - Default MySQL settings work. no need to change anything, but you should change IP and port
 - Only "root" user is declared in default database.
 - In addition to declaring user in MySQL you will have to add them in "utilisateur" table
@@ -45,7 +45,7 @@ FLUSH PRIVILEGES;
 
 
 
-#Usage and advise (In construction)
+#USAGE AND ADVISES (In construction)
 Quantity check:  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
 Inventory:  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed item quantity with 0 for price (the purpose for the "FREE" button).
