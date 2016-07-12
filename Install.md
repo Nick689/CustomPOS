@@ -16,20 +16,26 @@
 GRANT SELECT,UPDATE ON mybase.customer TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.devis TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.devisdet TO 'user'@'ip';
+GRANT SELECT,INSERT ON mybase.entree TO 'user'@'ip';
+GRANT SELECT,INSERT ON mybase.entreedet TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.fact TO 'user'@'ip';
 GRANT SELECT,INSERT ON mybase.factdet TO 'user'@'ip';
+GRANT SELECT ON mybase.fourn TO 'user'@'ip';
 GRANT SELECT ON mybase.regl TO 'user'@'ip';
 GRANT SELECT,UPDATE ON mybase.stk TO 'user'@'ip';
+GRANT SELECT ON mybase.output TO 'user'@'ip';
 GRANT SELECT ON mybase.utilisateur TO 'user'@'ip';
+GRANT UPDATE (freecell) ON mybase.utilisateur TO 'user'@'ip';
 GRANT EXECUTE ON PROCEDURE mybase.soldes TO 'user'@'ip';
+GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'user'@'ip';
 ```
 - In addition to declaring user in MySQL you will have to add them in "utilisateur" table
 - default password is empty so that you must change it to secure the program. Change "pass" variable in "global" library
-- Most of parameter are declared at the begining of "global" library, set correctly yours printers, files location, GST
+- Most of parameters are declared at the begining of "global" library, set correctly yours printers, files location, GST, and more ...
 
 
 
-##Usage (In construction)
+##Usage and advise (In construction)
 Quantity check:  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
 Inventory:  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed item quantity with 0 for price (the purpose for the "FREE" button).
