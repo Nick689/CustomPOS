@@ -27,10 +27,12 @@ GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'user'@'ip';
 FLUSH PRIVILEGES;
 ```
 ##Client:
+- Install libreoffice-calc
+- Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
+- Add Database.odb to your database list or create a new database connection and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function:
+**source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")**
 - Add the directory where is CustomPOS.ods in Tools/LibreOffice/Security/MacroSecurity/TrustedSource/TrustedFileLocations
-- sudo apt-get install libreoffice-calc
-- sudo apt-get install libreoffice-base
 - sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
 - sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
 - sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
@@ -40,11 +42,11 @@ FLUSH PRIVILEGES;
 
 #SETTINGS (In construction)
 - Default MySQL settings work. no need to change anything, but you should change IP and port
-- Only "root" user is declared in default database.
-- In addition to declaring user in MySQL you will have to add them in "utilisateur" table
-- default password is empty so that you must change it to secure the program. Change "pass" variable in "global" library
-- Most of parameters are declared at the begining of "global" library, set correctly yours printers, files location, GST, and more ...
-
+- Default password is empty so that you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
+- Most of parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, and more ...
+- Enable "Load User Setting with document" in Tools/Options/Saving/General/
+- Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
+- Disable "auto-save" in Tools/Options/Saving/General/
 
 
 #USAGE AND ADVISES (In construction)
