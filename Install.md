@@ -1,6 +1,7 @@
 #INSTALL (In construction)
 ##Server:
 - sudo apt-get install mysql-server
+
 ##Administrator:
 - Install **MySQLworkbench** or any mysql manager
 - Inject **Dump.sql** using your prefered mysql manager
