@@ -59,7 +59,7 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 
 **Stock moving-management:**  See "Inventory", same operation.
 
-**Barcode:**  Delete any zero at the beginning of barcodes record otherwise it will not work.
+**Barcode:**  Delete any zero at the beginning of barcodes database record otherwise it will not work.
 Linux user have to disable shift key while scanning case sensitive barcodes.
 
 **Special items:**
