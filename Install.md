@@ -4,10 +4,10 @@
 - Default MySQL settings works, no need to change anything, except IP and port
 
 ##Administrator:
-- Install **MySQLworkbench** or any mysql manager
-- Inject **Dump.sql** using your prefered mysql manager
-- Inject **Stored procedures.sql** using your prefered mysql manager
-- Create and grant **new users** in this manner:
+- Install **MySQL workbench** or any mysql manager
+- Inject **Dump.sql**
+- Inject **Stored procedures.sql**
+- Create and grant **new users** like this:
 ```
 CREATE USER 'newuser'@'ip' IDENTIFIED BY 'password';
 GRANT SELECT,UPDATE ON mybase.customer TO 'user'@'ip';
