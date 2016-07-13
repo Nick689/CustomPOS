@@ -44,12 +44,12 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 
 
 #SETTINGS (In construction)
-- Default password is empty, you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
-- Most of parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, and more ...
-- Users and theirs rights must be defined in "utilisateur" table
-- Enable "Load User Setting with document" in Tools/Options/Saving/General/
-- Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
-- Disable "auto-save" in Tools/Options/Saving/General/
+- **MACRO SETTING:** Default password is empty, you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
+- **MACRO SETTING:** Most of parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, and more ...
+- **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
+- **CALC SETTING:** Enable "Load User Setting with document" in Tools/Options/Saving/General/
+- **CALC SETTING:** Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
+- **CALC SETTING:** Disable "auto-save" in Tools/Options/Saving/General/
 
 
 #USAGE AND ADVISES (In construction)
