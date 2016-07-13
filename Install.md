@@ -57,7 +57,7 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 
 **Inventory:**  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed item quantity with 0 for price (the purpose for the "FREE" button).
 
-**Stock moving-management:**  See "Inventory", operate the same way.
+**Stock moving-management:**  See "Inventory", same operation.
 
 **Barcode:**  Delete any zero at the beginning of barcodes record otherwise it will not work.
 Linux user have to disable shift key while scanning case sensitive barcodes.
