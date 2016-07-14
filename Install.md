@@ -35,15 +35,15 @@ FLUSH PRIVILEGES;
 - Install libreoffice-calc
 - Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
+- sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
+- sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
+- sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
+- sudo fc-cache -f -v                                               #will recharge font list
 - **CALC SETTING:** Add Database.odb to your database list in Tools/Options/LibreOfficeBase/Database or create a new database connection in Base and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function and save setting in a different .ods file:
 ```
 source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
 ```
 - **CALC SETTING:** Select "High security" in Tools/LibreOffice/Security/MacroSecurity and add the directory where is CustomPOS.ods in Trusted Locations
-- sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
-- sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
-- sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
-- sudo fc-cache -f -v                                               #will recharge font list
 - **CALC SETTING:** Enable "Load User Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Disable "auto-save" in Tools/Options/Saving/General/
