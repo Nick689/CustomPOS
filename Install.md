@@ -27,6 +27,9 @@ GRANT EXECUTE ON PROCEDURE mybase.soldes TO 'newuser'@'ip';
 GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'newuser'@'ip';
 FLUSH PRIVILEGES;
 ```
+- **MACRO SETTING:** Default password is empty, you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
+- **MACRO SETTING:** Most parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, ...
+- **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
 ##Client:
 - Install libreoffice-calc
 - Install libreoffice-base
@@ -40,17 +43,9 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 - sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
 - sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
 - sudo fc-cache -f -v                                               #will recharge font list
-
-
-
-#SETTINGS (In construction)
-- **MACRO SETTING:** Default password is empty, you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
-- **MACRO SETTING:** Most parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, ...
-- **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
 - **CALC SETTING:** Enable "Load User Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Disable "auto-save" in Tools/Options/Saving/General/
-
 
 #USAGE AND ADVISES (In construction)
 **Quantity check:**  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
