@@ -27,7 +27,8 @@ GRANT EXECUTE ON PROCEDURE mybase.soldes TO 'newuser'@'ip';
 GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'newuser'@'ip';
 FLUSH PRIVILEGES;
 ```
-- **MACRO SETTING:** Default password is empty, you must change it to secure the spreadsheet: Change the value of "pass" variable in "global" library
+- **MACRO SETTING:** The password used to protect CustomPOS.ods is empty by default, you must change it at two locations: -- change the value of "pass" variable in "global" library
+-- the same password is combined to the MySQL users passwords you have to change at the same time
 - **MACRO SETTING:** Most parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, ...
 - **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
 
