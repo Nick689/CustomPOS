@@ -28,7 +28,7 @@ GRANT EXECUTE ON PROCEDURE mybase.fdj TO 'newuser'@'ip';
 FLUSH PRIVILEGES;
 ```
 - **MACRO SETTING:** The password used to protect CustomPOS.ods is empty by default, you must change it at two locations: -- change the value of "pass" variable in "global" library
--- the same password is combined to the MySQL users passwords you have to change like this:
+-- the same password is combined to the database users passwords you have to change like this:
 ```
 SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 ```
