@@ -48,7 +48,7 @@ SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 ```
 source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
 ```
-- For have multi-session duplicate and open CustomPOS.ods file.
+- For multi-session ability you simply need to duplicate CustomPOS.ods file.
 - **CALC SETTING:** Select "High security" in Tools/LibreOffice/Security/MacroSecurity and add the directory where is CustomPOS.ods in Trusted Locations
 - **CALC SETTING:** Enable "Load User Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
