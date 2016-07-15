@@ -65,5 +65,5 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 Linux user have to disable shift key while scanning case sensitive barcode.
 
 **Special items:**
-- *DIV* is the reference for miscellaneous item, it has editable name.
-- '  Single quote at the beginning of the name indicate a comment.
+- **DIV** is the reference for miscellaneous item, it has editable name.
+- **'**  Single quote at the beginning of the name indicate a comment.
