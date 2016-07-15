@@ -4,12 +4,7 @@ It is not really a program as it is only a spreadsheet with macros.
 LibreOffice is used for GUI and MySQL for database. No data is stored in client side. For backup you only have to save the database.
 The GUI has been designed to be extremely efficient with only one page POS, there is no sub-page, only one pop-up confirmation message will be displayed before invoice validation.
 
-
-
 ##[Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
-
-
-
 
 ##Features
 * Multi-user
@@ -23,22 +18,16 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 * Advanced pricing management with selectable scenarios for each item
 * Any mistakenly recorded data can be corrected easily as your have full control over the database.
 
-
-
 ##Planned features
 * Localized versions
 * Windows, OSX versions
 * Statistics
 * Address book
 
-
-
 ##Advancement
 Only Linux-French version is currently available. The item edit page does not exist yet, but you can edit the database directly. Most important features are implemented and this program is already used in production. You should find a comfortable reactivity and stability.
 
 Despite CustomPOS's powerful features with unlimited number of users and a light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that can not all be locked and advanced users can hack it.
-
-
 
 ##Limitations
 * Max number of invoice: 18446744073709551615 BIGINT(20)
