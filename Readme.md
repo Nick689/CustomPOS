@@ -17,10 +17,11 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 * Easy to customize with easy macro code
 * Built-in PDF export
 * Barcode printing (code128 only)
-* Daily cash register check that can be completed efficiently in seconds
+* Cash register check can be completed efficiently in seconds on a daily basis or afterward
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
+* Any mistakenly recorded data can be corrected easily as your have full control over the database.
 
 
 
