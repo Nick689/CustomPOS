@@ -32,7 +32,7 @@ FLUSH PRIVILEGES;
 ```
 SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 ```
-- **MACRO SETTING:** Most parameters are declared at the begining of "global" library, set correctly yours printers names, files location, GST, ...
+- **MACRO SETTING:** Most parameters are declared at the begining of "global" library. Set correctly yours printers names, files location, GST, ...
 - **MACRO SETTING:**  Printer settings are defined in "iprint" and "label" libraries
 - **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
 
