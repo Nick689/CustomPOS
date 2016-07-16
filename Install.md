@@ -34,7 +34,7 @@ SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 ```
 - **DATABASE SETTING:** Users and theirs rights must be defined in "utilisateur" table
 - **MACRO SETTING:** Most parameters are declared at the begining of "global" library. Set correctly yours printers names, files location, GST, ...
-- **MACRO SETTING:**  Printer settings are defined in "iprint" and "label" libraries
+- **MACRO SETTING:**  Printer settings are defined in "iprint" and "label" libraries. For detailed printer setting see [this](https://wiki.openoffice.org/wiki/Documentation/BASIC_Guide/StarDesktop).
 
 ##Client:
 - Install libreoffice-calc
