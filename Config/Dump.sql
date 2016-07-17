@@ -278,5 +278,5 @@ CREATE TABLE `utilisateur` (
   `print` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-INSERT INTO `utilisateur` VALUES ('root','root',1,1,1,1,1,1,1,1,1,0,88,0,0,0,0,0);
+INSERT INTO `utilisateur` VALUES ('root','Admin',1,1,1,1,1,1,1,1,1,0,88,0,0,0,0,0);
 
