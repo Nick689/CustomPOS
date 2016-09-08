@@ -16,7 +16,7 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
-* Any mistakenly recorded data can be corrected easily as your have full control over the database.
+* Full database access let you correct any mistake easily
 
 ##Planned features
 * Localized versions
