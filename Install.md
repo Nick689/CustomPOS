@@ -41,9 +41,12 @@ SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 - Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
 - sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
-- sudo mkdir /usr/share/fonts/truetype/code128                      #barcode font install
+
+commande for barcode font install if you your font manager don't work:
+- sudo mkdir /usr/share/fonts/truetype/code128
 - sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
 - sudo fc-cache -f -v                                               #will recharge font list
+
 - **CALC SETTING:** Add Database.odb to your database list in Tools/Options/LibreOfficeBase/Database or create a new database connection in Base and name it "mybase". If you want to manage several database, you will have to change the database name in "notconnected" function and save setting in a different .ods file:
 ```
 source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatabasename")
@@ -57,7 +60,7 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 #USAGE AND ADVISES (In construction)
 **Quantity check:**  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
-**Inventory:**  There is no inventory module in CustomPOS, however you can adjust the stock by invoicing to a special "Inventory" customer the properly signed item quantity with 0 for price (the purpose for the "FREE" button).
+**Inventory:**  There is no dedicated inventory module in CustomPOS, however you can adjust quantities by charging "Inventory" special customer account with the properly signed quantity, 0 priced (the purpose for the "FREE" button) item you want to adjust.
 
 **Stock moving-management:**  See "Inventory", same operation.
 
