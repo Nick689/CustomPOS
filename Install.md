@@ -72,5 +72,5 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 Linux user have to disable shift key while scanning case sensitive barcode.
 
 **Special items:**
-- **DIV** is the reference for miscellaneous item, it has editable name. This item is identified by "misc" constant you have to define in "global" library.
+- **DIV** is the reference for miscellaneous item, it has editable name and price. You have to define correctly the "misc" constant in "global" library so that the program can retrieve this item in database.
 - **'**  Single quote at the beginning of the name indicate a comment.
