@@ -42,7 +42,7 @@ SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
 - sudo apt-get install libreoffice-mysql-connector                  #mysql connector for local and remote access
 
-commande for barcode font install if you your font manager don't work:
+commande for barcode font install if your font manager don't work:
 - sudo mkdir /usr/share/fonts/truetype/code128
 - sudo mv code128.ttf /usr/share/fonts/truetype/code128/code128.ttf #place code128.ttf file in your home directory before
 - sudo fc-cache -f -v                                               #will recharge font list
