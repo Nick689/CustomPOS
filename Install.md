@@ -4,7 +4,7 @@
 - Default MySQL settings works, no need to change anything, except IP and port
 
 ##Administrator:
-- Install **MySQL workbench** or any mysql manager
+- Install **mysql-workbench** or any mysql manager
 - Inject **Dump.sql**
 - Inject **Stored procedures.sql**
 - Create and grant **new users** like this:
