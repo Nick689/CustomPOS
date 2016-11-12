@@ -34,9 +34,3 @@ Despite CustomPOS's powerful features with unlimited number of users and a light
 * Max number of sold item: 18446744073709551615 BIGINT(20)
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
-
-##[License](License.md)
-CustomPOS is published under GNU GPLv2
-* You can copy and distribute this code as it is.
-* You can copy and modify this code for personal use.
-* If you distribute a program using a modified version of this code you have to publish your code under the same GPL license.
