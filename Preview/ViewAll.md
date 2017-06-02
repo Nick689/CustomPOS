@@ -21,4 +21,4 @@
 
 
 ## Products list
-![product](https://github.com/Nick689/CustomPOS/blob/master/Preview/stk.png)
+![product](https://github.com/Nick689/CustomPOS/blob/master/Preview/Stk.png)
