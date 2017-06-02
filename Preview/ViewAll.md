@@ -17,7 +17,7 @@
 ![balance](https://github.com/Nick689/CustomPOS/blob/master/Preview/Balance.png)
 
 
-## ProductPage
+## Product database format
 *  `refint` mediumint(7) NOT NULL AUTO_INCREMENT,
 *  `refmag` varchar(13) NOT NULL,
 *  `codebar` varchar(13) DEFAULT NULL,
