@@ -1,9 +1,9 @@
-#INSTALL (In construction)
-##Server:
+# INSTALL (In construction)
+## Server:
 - sudo apt-get install mysql-server
 - Default MySQL settings works, no need to change anything, except IP and port
 
-##Administrator:
+## Administrator:
 - Install **mysql-workbench** or any mysql manager
 - Inject **Dump.sql**
 - Inject **Stored procedures.sql**
@@ -36,7 +36,7 @@ SET PASSWORD FOR 'bob'@'ip' = PASSWORD('newpassword');
 - **MACRO SETTING:** Most parameters are declared at the begining of "global" library. Set correctly yours printers names, files location, GST, ...
 - **MACRO SETTING:**  Printer settings are defined in "iprint" and "label" libraries. For detailed printer setting see [this](https://wiki.openoffice.org/wiki/Documentation/BASIC_Guide/StarDesktop).
 
-##Client:
+## Client:
 - Install libreoffice-calc
 - Install libreoffice-base
 - copy CustomPOS.ods, Database.odb and Balance.ods in any user directory
@@ -57,7 +57,7 @@ source=createUnoService("com.sun.star.sdb.DatabaseContext").GetByName("yourdatab
 - **CALC SETTING:** Enable "Load Printer Setting with document" in Tools/Options/Saving/General/
 - **CALC SETTING:** Disable "auto-save" in Tools/Options/Saving/General/
 
-#USAGE AND ADVISES (In construction)
+# USAGE AND ADVISES (In construction)
 **Quantity check:**  Instead of forcing stock quantity records without any justification, you can call "chk" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
 
 **Inventory:**  There is no dedicated inventory module in CustomPOS, however you can adjust quantities by charging special "Inventory" customer with the properly signed quantity, 0 priced (the purpose for the "FREE" button) item you want to adjust.
