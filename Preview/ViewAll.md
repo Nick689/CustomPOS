@@ -1,23 +1,23 @@
-POS
+## POS
 ![POS](https://github.com/Nick689/CustomPOS/blob/master/Preview/Facturation.png)
 
-Invoice view
+## Invoice view
 ![Invoice view](https://github.com/Nick689/CustomPOS/blob/master/Preview/Affichage%20facture.png)
 
-Item list
+## Item list
 ![Item list](https://github.com/Nick689/CustomPOS/blob/master/Preview/Liste%20articles.png)
 
-Invoice list
+## Invoice list
 ![Invoice list](https://github.com/Nick689/CustomPOS/blob/master/Preview/Liste%20factures.png)
 
-Invoice PRINT/PDF
+## Invoice PRINT/PDF
 ![PDF](https://github.com/Nick689/CustomPOS/blob/master/Preview/17618.png)
 
-Customer balance
+## Customer balance
 ![balance](https://github.com/Nick689/CustomPOS/blob/master/Preview/Balance.png)
 
 
-ProductPage
+## ProductPage
 *  `refint` mediumint(7) NOT NULL AUTO_INCREMENT,
 *  `refmag` varchar(13) NOT NULL,
 *  `codebar` varchar(13) DEFAULT NULL,
