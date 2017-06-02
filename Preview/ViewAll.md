@@ -13,6 +13,9 @@
 ## Invoice PRINT/PDF
 ![PDF](https://github.com/Nick689/CustomPOS/blob/master/Preview/17618.png)
 
+## Customers list
+![Clients](https://github.com/Nick689/CustomPOS/blob/master/Preview/Clients.jpg)
+
 ## Customer balance
 ![balance](https://github.com/Nick689/CustomPOS/blob/master/Preview/Balance.png)
 
