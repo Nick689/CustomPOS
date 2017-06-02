@@ -10,8 +10,8 @@
 ## Invoice list
 ![Invoice list](https://github.com/Nick689/CustomPOS/blob/master/Preview/Liste%20factures.png)
 
-## Invoice PRINT/PDF
-![PDF](https://github.com/Nick689/CustomPOS/blob/master/Preview/17618.png)
+## Invoice PRINT
+![PRINT](https://github.com/Nick689/CustomPOS/blob/master/Preview/Invoice.png)
 
 ## Customers list
 ![Clients](https://github.com/Nick689/CustomPOS/blob/master/Preview/Clients.jpg)
