@@ -17,7 +17,7 @@ The GUI has been designed to be extremely efficient with only one page POS, ther
 * Cash register check can be completed efficiently in seconds on a daily basis or afterward
 * Full database access let you correct any mistake easily
 * Data export has never been so easy, you are already in Calc
-* InvoiceCHK script will find any invoice inconsistency by comparing invoice header with details-database
+* Check invoice database inconsistency with InvoiceCHK script which compare invoice header and details-database
 
 ## Planned features
 * Localized versions
