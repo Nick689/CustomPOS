@@ -18,7 +18,7 @@ GUI has been designed to be extremely efficient with only one page POS, there is
 * Detailed income page shows instant cash state and can be viewed at any moment
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily, but, as it is dangerous
-* InvoiceCHK will find any invoice data inconsistencies by comparing invoice header and details-data
+* InvoiceCHK will find any invoice data inconsistencies by comparing invoice header and detail data
 * And when chk() stored precedure is called it will verify every sales and supplies and will notify you any difference with current stock.
 
 ## Planned features
@@ -31,7 +31,7 @@ GUI has been designed to be extremely efficient with only one page POS, there is
 Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. You will find a comfortable reactivity and stability. Current version is 0.7   Please see changelog for more details.
 
 ## Limitations
-Despite CustomPOS's powerful features with unlimited simultaneous users, light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
+Despite CustomPOS's capabilities with unlimited simultaneous users and light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)
