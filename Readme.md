@@ -9,15 +9,17 @@ GUI has been designed to be extremely efficient with only one page POS, there is
 ## Features
 * Multi-user
 * Multi-session
-* Easy to customize with easy macro code
+* Every database write is made transactionally to avoid data corruption
+* Easy to customize macro code
 * Built-in PDF export
 * Barcode printing (code128 only)
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 * Detailed income page shows instant cash state and can be viewed at any moment
 * Data export has never been so easy, you are already in Calc
-* Full database access let you correct any mistake easily, but full access can be dangerous and
-* Invoice database inconsistencies will be found by InvoiceCHK script by comparing invoice header and details-database
+* Full database access let you correct any mistake easily, but, as it is dangerous
+* InvoiceCHK will find any invoice data inconsistencies by comparing invoice header and details-data
+* And when chk() stored precedure is called it will verify every sales and supplies and will notify you any difference with current stock.
 
 ## Planned features
 * Localized versions
