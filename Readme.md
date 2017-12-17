@@ -19,7 +19,7 @@ GUI has been designed to be extremely efficient with only one page POS, there is
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily, but, as it is dangerous
 * InvoiceCHK will find any invoice data inconsistencies by comparing invoice header and detail data
-* And when chk() stored precedure is called it will verify every sales and supplies and will notify you any difference with current stock.
+* And when chk() stored precedure is called it will compile every sales and supplies and will notify you any difference with current stock.
 
 ## Planned features
 * Localized versions
