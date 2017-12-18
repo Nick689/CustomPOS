@@ -31,7 +31,7 @@ GUI has been designed to be extremely efficient with only one page POS, there is
 Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. You will find a comfortable reactivity and stability. Current version is 0.7   Please see changelog for more details.
 
 ## Limitations
-Despite CustomPOS's capabilities with unlimited simultaneous users and light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
+Despite CustomPOS's capabilities with unlimited users and light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)
