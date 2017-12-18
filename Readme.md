@@ -9,9 +9,9 @@ GUI has been designed to be highly efficient with only one page POS, there is no
 ## Features
 * Multi-user
 * Multi-session
-* Only MariaDB is needed on the server which can run on intel i3 or i5 without trouble
+* Only Mysql is needed on the server which can run on intel i3 or i5 without trouble
 * Every database write is made transactionally to avoid data corruption
-* Easy to customize macro code
+* The macros are easily customizable
 * Built-in PDF export
 * Barcode printing (code128 only)
 * Advanced user right management
