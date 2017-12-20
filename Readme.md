@@ -22,8 +22,8 @@ CustomPOS main concepts are:
 * Detailed income page shows instant cash state and can be viewed at any moment
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily, but, as it is dangerous
-* InvoiceCHK can be used to find any invoice data inconsistencies by comparing invoice header and detail data
-* And when chk() stored procedure is called it will compile every sales and supplies and will notify you any difference with current stock.
+* InvoiceCHK can be used to find any invoice data inconsistency by comparing invoice header and detail data
+* chk() can be used to find any stock incoherency by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
 * Localized versions
