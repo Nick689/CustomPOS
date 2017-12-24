@@ -13,7 +13,7 @@ CustomPOS main concepts are:
 * The macros are easily customizable
 * Multi-user
 * Multi-session
-* Only Mysql is needed on the server which can run on intel i3 or i5 without trouble
+* Only Mysql (or substitute) is needed on the server which can run on intel i3 or i5 without trouble
 * Every data write are made transactionally to avoid data corruption
 * Built-in PDF export
 * Barcode printing (code128 only)
