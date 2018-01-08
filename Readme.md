@@ -6,8 +6,8 @@ GUI has been designed to be highly efficient with only one page POS, there is no
 CustomPOS main concepts are:
 - You can customize this program as you like
 - You are the master of your data so that you can:
--correct problems at their origin
--Extract data  for analyzing, statistics, accounting, etc ...
+  - correct problems at their origin
+  - Extract data  for analyzing, statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
