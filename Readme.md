@@ -4,7 +4,7 @@ No data is stored in client side, only the database backup is needed to save all
 GUI has been designed to be highly efficient with only one page POS, there is no sub-page, only one popup confirmation message will be displayed before invoice validation.
 CustomPOS main concepts are:
 - It is easy to customise, it is only made of macros and SQL requests (Yes, we cannot exactly call it a program)
-- You are the master of your data (full database access) allowing you to correct mistakes at their origin, and easily extract data (for statistics, accounting, etc ...)
+- You are the master of your data (full database access) allowing you to correct mistakes at their origin, and to easily extract data (for statistics, accounting, etc ...)
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
