@@ -1,23 +1,20 @@
 ## Description
-CustomPOS is a retail Point of Sale system.
-It is not exactly a program since it is only a spreadsheet with macros.
-LibreOffice is used for GUI and MySQL for database. No data is stored in client side. Only the database backup is needed to save all your data.
-GUI has been designed to be highly efficient with only one page POS, there is no sub-page, only one pop-up confirmation message will be displayed before invoice validation.
+CustomPOS is a retail Point of Sale system. LibreOffice is used for GUI and MySQL for database, why reinventing the wheel ?
+No data is stored in client side, only the database backup is needed to save all your data.
+GUI has been designed to be highly efficient with only one page POS, there is no sub-page, only one popup confirmation message will be displayed before invoice validation.
 CustomPOS main concepts are:
-- You can customize this program as you like
-- You are the master of your data so that you can:
-  - correct problems at their origin
-  - Extract data  for analyzing, statistics, accounting, etc ...
+- It is easy to customise, it is only made of macros and SQL requests (Yes, we cannot exactly call it a program)
+- You are the master of your data (full database access) allowing you to correct mistakes at their origin, and easily extract data (for statistics, accounting, etc ...)
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
 ## Features
-* The macros are easily customizable
-* Multi-user
-* Multi-session
-* Only Mysql (or substitute) is needed on the server which can run on intel i3 or i5 without trouble
-* Every data write are made transactionally to avoid data corruption
-* Built-in PDF export
+* Easy to customise
+* Multi user
+* Multi session
+* Little server hardware needs (for Mysql or substitute)
+* Transactional data write to avoid data corruption
+* Builtin PDF export
 * Barcode printing (code128 only)
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
@@ -25,10 +22,10 @@ CustomPOS main concepts are:
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily, but, as it is dangerous
 * InvoiceCHK can be used to find any invoice data inconsistency by comparing invoice header and detail data
-* chk() can be used to find any stock incoherency by comparing it with theoretical quantity compiled from every sales and supplies
+* chk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
-* Localized versions
+* Localised versions
 * Windows, OSX versions
 * Statistics
 * Address book
