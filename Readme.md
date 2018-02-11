@@ -1,5 +1,5 @@
 ## Description
-CustomPOS is a retail Point of Sale system. LibreOffice is used for GUI and MySQL for database, why reinventing the wheel ?
+CustomPOS is a retail Point of Sale system. LibreOffice is used for GUI and MySQL for database, why reinventing the wheel!?
 No data is stored in client side, only the database backup is needed to save all your data.
 GUI has been designed to be highly efficient with only one page POS, there is no sub-page, only one popup confirmation message will be displayed before invoice validation.
 CustomPOS main concepts are:
