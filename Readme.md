@@ -25,7 +25,7 @@ CustomPOS main concepts are:
 * chk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
-* Localised versions
+* Localized versions
 * Windows, OSX versions
 * Statistics
 * Address book
