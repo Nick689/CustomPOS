@@ -18,7 +18,7 @@ CustomPOS main concepts are:
 * Barcode printing (code128 only)
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
-* Detailed income page shows instant cash state and can be viewed at any moment
+* Detailed incomes page shows real time incomes of current or previous day.
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily, but, as it is dangerous
 * InvoiceCHK can be used to find any invoice data inconsistency by comparing invoice header and detail data
