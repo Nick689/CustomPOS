@@ -10,11 +10,8 @@ CustomPOS main concepts are:
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
 ## Features
-* Easy to customize
 * Multi user
 * Multi session
-* Little server hardware needs (for Mysql or substitute)
-* Transactional data write to avoid data corruption
 * Built-in PDF export
 * Barcode printing (code128 only)
 * Advanced user right management
