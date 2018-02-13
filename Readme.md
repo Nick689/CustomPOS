@@ -26,7 +26,7 @@ CustomPOS main concepts are:
 * Localized versions
 * Windows, OSX versions
 * Statistics
-* Address book
+* MSOffice version
 
 ## Advancement
 Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Reliability is good. Current version is 0.7 Contact me to get it. Please see changelog for more details.
