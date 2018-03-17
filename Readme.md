@@ -10,10 +10,11 @@ CustomPOS main concepts are:
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
 ## Features
-* Multi user
-* Multi session
+* Multi-user
+* Multi-session
 * Built-in PDF export
 * Barcode printing (code128 only)
+* Shortkeys allow you to work with keybord only
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of current or previous day.
