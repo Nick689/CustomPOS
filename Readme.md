@@ -29,7 +29,7 @@ CustomPOS main concepts are:
 * MSOffice version
 
 ## Advancement
-Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Reliability is good. Current version is 0.7 Contact me to get it. Please see changelog for more details.
+Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Reliability is good. Current version is 0.7 Contact me to get it. Please see changelog in Wiki section for more details.
 
 ## Limitations
 Despite CustomPOS's capabilities with unlimited users and light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
