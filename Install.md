@@ -19,7 +19,9 @@ sudo netstat -anp | grep portnumber
 select user,host from mysql.user;
 ```
 
-## STEP1: DATABASE DUMP: (default mysqldump setting is correct, no option is needed)
+## STEP1: DATABASE DUMP:
+default mysqldump setting is OK, no option are needed
+
 ### if you have mysql remote access with privilege on all table:
 ```
 mysqldump -h serverip -P port -u root -p databasename > dump.sql
