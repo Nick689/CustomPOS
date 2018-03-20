@@ -39,4 +39,4 @@ Despite CustomPOS's capabilities with unlimited users and light-weight server lo
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
-Demo version will use spreadsheets to store data. It will not have the same capability and security than SQL version. LibreOffice is limited to 1 million rows. It is planned for only one user.
+Demo version will use spreadsheets to store data. It will not have the same features and security than SQL version. LibreOffice is limited to 1 million rows. It is planned for only one user.
