@@ -20,8 +20,8 @@ CustomPOS main concepts are:
 * Detailed incomes page shows real time incomes of today or any previous day
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily,        and,    as this is dangerous
-* InvoiceCHK can be used to find any invoice data inconsistency
-* chk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
+* InvoiceCHK script can be used to find any invoice data inconsistency
+* stkchk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
 * Portable demo version (do not need installation)
