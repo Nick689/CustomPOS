@@ -1,41 +1,41 @@
-#INSTALL PROCEDURE (on Debian linux)
+# INSTALL PROCEDURE (on Debian linux)
 
-##DIAGNOSTIC TOOLS (to get information or access, but do not install anything)
+## DIAGNOSTIC TOOLS (to get information or access, but do not install anything)
 
-###Shell command for local or ssh connection:
+### Shell command for local or ssh connection:
 ```
 mysql -u user -p
 ```
-###Shell command for remote connection:
+### Shell command for remote connection:
 ```
 mysql -h serverip -u user -p (sudo needed some time)
 ```
-###Shell command to see wich program is listenning on a given port:
+### Shell command to see wich program is listenning on a given port:
 ```
 sudo netstat -anp | grep portnumber
 ```
-###SQL command to see all database users: (need ALL PRIVILEGES)
+### SQL command to see all database users: (need ALL PRIVILEGES)
 ```
 select user,host from mysql.user;
 ```
 
-##DATABASE DUMP: (default mysqldump setting is correct, no option is needed)
-###if you have mysql remote access with privilege on all table:
+## DATABASE DUMP: (default mysqldump setting is correct, no option is needed)
+### if you have mysql remote access with privilege on all table:
 ```
 mysqldump -h serverip -P port -u root -p databasename > dump.sql
 ```
 
-###if you have only ssh access:
+### if you have only ssh access:
 ```
 ssh user@serverIP mysqldump -u user -p databasename > dump.sql
 ```
  
  
-###In both case dump.sql is now in your /home
+### In both case dump.sql is now in your /home
 
 
-##STEP 1: SSH SETUP
-###sudo and package install
+## STEP 1: SSH SETUP
+### sudo and packages install
 ```
 apt-get install sudo (not installed on debian 9 by default) 
 add sudoers (there is some issue with root access over ssh):
@@ -48,16 +48,16 @@ systemctl enable ntp (to active automaticly NTP server on reboot)
 ntpq -p (to check status of NTP server)
 ```
 
-###SSH CONFIG: (on client)
+### SSH CONFIG: (on client)
 ```
 ssh-keygen -t rsa            (keep in mind passphrase)
 ssh-copy-id user@serverip
 ssh-add             (passphrase will be requested)
 ```
 
-###SERVER CONFIG: (on client over ssh)
-connect to the server: ssh use@serverip
-config ssh for more security: sudo nano /etc/ssh/sshd_config
+### SERVER CONFIG: (on client over ssh)
+- connect to the server: ssh use@serverip
+- config ssh for more security: sudo nano /etc/ssh/sshd_config
 ```
 Port portnumber (default port 22 is not advised)
 Protocol 2
@@ -74,11 +74,11 @@ ClientAliveInterval 600
 ClientAliveCountMax 0
 ```
 
-restart ssh to make changes: sudo /etc/init.d/ssh reload
+- restart ssh to make changes: sudo /etc/init.d/ssh reload
 
-reconnect with: ssh user@serverip -p portnumber
+- reconnect with: ssh user@serverip -p portnumber
 
-server config for SSD: sudo nano /etc/fstab
+- server config for SSD: sudo nano /etc/fstab
 ```
 tmpfs      /tmp            tmpfs        defaults,size=1g           0    0
 tmpfs /var/log tmpfs defaults,nosuid,nodev,noatime,mode=0755,size=5% 0 0
@@ -87,7 +87,7 @@ vm.swappiness=5
 ```
 
 
-##STEP 2: MARIADB INSTALL: (over ssh)
+## STEP 2: MARIADB INSTALL: (over ssh)
 sudo apt-get install mariadb-server
 sudo mysql_secure_installation
 sudo nano /etc/mysql/mariadb.cnf
@@ -107,7 +107,7 @@ innodb_buffer_pool_size=4G
 ```
 sudo /etc/init.d/mysql reload
 
-###FIRST CONNECTION AND DATABASE CREATION: (over ssh or direct access)
+### FIRST CONNECTION AND DATABASE CREATION: (over ssh or direct access)
 sudo mysql -u root -p
 ```
 CREATE DATABASE custompos;
@@ -116,14 +116,14 @@ GRANT ALL PRIVILEGES ON custompos.* TO 'root'@'serverip' WITH GRANT OPTION;
 exit
 ```
 
-###DATABASE COPY:
+### DATABASE COPY:
 
-####Method 1: (need mysql remote access with all privilege)
+#### Method 1: (need mysql remote access with all privilege)
 ```
 mysql -h host -u user_name -p custompos < dump.sql
 ```
 
-####Method 2 via ssh/scp:
+#### Method 2 via ssh/scp:
 transfer database via ssh/scp:
 cd to where is your dump file on client computer
 ```
@@ -135,10 +135,10 @@ cd to dump file location on server (/home/user/)
 sudo mysql -u root -p custompos < dump.sql
 ```
 
-###STORED PROCEDURES INSTALL:
+### STORED PROCEDURES INSTALL:
 copy/paste via ssh the file content of stored.procedure.sql directly into an granted mysql session (no file copy needed)
 
-###CREATE AND GRANT ADMINISTRATOR: (direct database access)
+### CREATE AND GRANT ADMINISTRATOR: (direct database access)
 ```
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON production.customer TO 'admin'@'localhost';
@@ -158,7 +158,7 @@ GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'localhost';
 ```
 
-###CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
+### CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
 ```
 CREATE USER 'user1'@'888.888.888.%' IDENTIFIED BY 'pass1pass2';
 GRANT SELECT,UPDATE ON production.customer TO 'user1'@'888.888.888.%'
@@ -173,7 +173,7 @@ GRANT EXECUTE ON PROCEDURE production.soldes TO 'user1'@'888.888.888.%'
 GRANT EXECUTE ON PROCEDURE production.solde TO 'user1'@'888.888.888.%'
 ```
 
-###CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
+### CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
 ```
 CREATE USER 'user2'@'888.888.888.%' IDENTIFIED BY 'pass1pass2;
 GRANT SELECT,UPDATE ON production.customer TO 'user2'@'888.888.888.%'
