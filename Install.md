@@ -144,7 +144,8 @@ mysql -h host -u user_name -p custompos < dump.sql
 ### STEP 6: STORED PROCEDURES INSTALL:
 copy/paste (no file copy needed) via ssh the file content of stored.procedure.sql directly with root access to database
 
-### STEP 7: CREATE AND GRANT ADMINISTRATOR: (direct database access)
+### STEP 7: CREATE AND GRANT ADMINISTRATOR: (for direct database access)
+- for SSH or bar metal access
 ```
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON production.customer TO 'admin'@'localhost';
@@ -162,6 +163,26 @@ GRANT ALL ON production.utilisateur TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.soldes TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'localhost';
+```
+- for mysql client access
+Incomplet IP number with % allow you to connect from every PC on your network
+```
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON production.customer TO 'admin'@'888.888.888.%'
+GRANT SELECT,UPDATE,DELETE ON production.devis TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.devisdet TO 'admin'@'888.888.888.%'
+GRANT SELECT,UPDATE,DELETE ON production.entree TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.entreedet TO 'admin'@'888.888.888.%'
+GRANT SELECT,UPDATE,DELETE ON production.fact TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.factdet TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.fourn TO 'admin'@'888.888.888.%'
+GRANT SELECT,UPDATE,DELETE ON production.regl TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.stk TO 'admin'@'888.888.888.%'
+GRANT SELECT ON production.output TO 'admin'@'888.888.888.%'
+GRANT ALL ON production.utilisateur TO 'admin'@'888.888.888.%'
+GRANT EXECUTE ON PROCEDURE production.soldes TO 'admin'@'888.888.888.%'
+GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'888.888.888.%'
+GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'888.888.888.%'
 ```
 
 ### STEP 8: CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
