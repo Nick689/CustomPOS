@@ -36,7 +36,7 @@ ssh user@serverIP mysqldump -u user -p databasename > dump.sql
 ### In both case dump.sql is now in your /home
 
 
-## STEP 2: SSH SETUP
+## STEP 2: CONNECTION & HARWARE SETUP
 
 ### sudo and packages install
 ```
