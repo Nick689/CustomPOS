@@ -41,6 +41,8 @@ ssh user@serverIP mysqldump -u user -p databasename > dump.sql
 
 ## STEP 2: CONNECTION & HARWARE SETUP
 
+IF YOU ARE JUST TRYING THIS PROGRAM, YOU CAN INSTALL EVERYTHING ON THE SAME PC AND BYPASS EVERYTHING ABOUT SSH
+
 ### sudo and packages install
 ```
 apt-get install sudo (not installed on debian 9 by default) 
