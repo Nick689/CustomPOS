@@ -164,7 +164,9 @@ GRANT EXECUTE ON PROCEDURE production.soldes TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'localhost';
 GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'localhost';
 ```
+
 - for mysql client access
+
 Incomplet IP number with % allow you to connect from every PC on your network
 ```
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
