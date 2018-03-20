@@ -29,7 +29,7 @@ CustomPOS main concepts are:
 * Sales statistics
 
 ## Advancement
-Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Reliability is good. Current version is 0.7 Contact me to get it. Please see changelog in Wiki section for more details.
+Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Stability is good but not as good other classic program, however data lost cannot happen with transactional SQL. Current version is 0.7  Contact me to get it. Please see changelog in Wiki section for more details.
 
 ## Limitations
 Despite CustomPOS's capabilities with unlimited users and light-weight server load, it is not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
@@ -39,4 +39,4 @@ Despite CustomPOS's capabilities with unlimited users and light-weight server lo
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
-Demo version will use spreadsheets to store data. It will not have the same capability and security than SQL version. LibreOffice is limited to 1 million rows
+Demo version will use spreadsheets to store data. It will not have the same capability and security than SQL version. LibreOffice is limited to 1 million rows. It is planned for only one user.
