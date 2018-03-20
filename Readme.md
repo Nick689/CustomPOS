@@ -4,7 +4,7 @@ CustomPOS GUI has been designed to be highly efficient with only one page POS, w
 No data is stored in client side. All you have to do if you want to save your data is to backup the database.    
   
 CustomPOS main concepts are:
-- You can easily customize this program without advanced programing skill
+- You can easily customize this program without advanced programing skill (basic knowledge in programing,networking,linux are needed)
 - You are the master of your data (full database access) allowing you to correct mistakes at their origin, and to easily extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
