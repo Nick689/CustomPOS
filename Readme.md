@@ -4,7 +4,7 @@ CustomPOS GUI has been designed to be highly efficient with only one page POS, w
 No data is stored in client side. All you have to do if you want to save your data is to backup the database.    
   
 CustomPOS main concepts are:
-- You can easily customize this program without advanced programing skill (basic knowledge in programing,networking,linux are needed)
+- You can easily customize this program without advanced programing skill (you need to know basics about programing and networking)
 - You are the master of your data: full database access allow you to correct any mistakes at their origin, you can also easily extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
@@ -24,10 +24,9 @@ CustomPOS main concepts are:
 * chk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
+* Portable demo version (do not need installation)
 * Localized versions
-* Windows, OSX versions
-* Statistics
-* MSOffice version
+* Sales statistics
 
 ## Advancement
 Only Linux-French version is currently available. Item edit page does not exist yet, but you can edit database directly. Most important features are implemented and this program is used daily. Reliability is good. Current version is 0.7 Contact me to get it. Please see changelog in Wiki section for more details.
@@ -39,3 +38,5 @@ Despite CustomPOS's capabilities with unlimited users and light-weight server lo
 * Max number of sold item: 18446744073709551615 BIGINT(20)
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
+
+Demo version will use spreadsheet to store data. It will not have the same capability and security than SQL version. LibreOffice is limited to 1 million rows
