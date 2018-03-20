@@ -1,10 +1,12 @@
 ## Description
-CustomPOS is a retail Point of Sale system. It is made of LibreOffice macro and SQL request. Everyone with basic programing skill can customize it.    
-CustomPOS GUI has been designed to be highly efficient with only one page POS, without sub-page. Only one popup confirmation will show before invoice is recorded.    
+CustomPOS is a retail Point of Sale system. It is made of LibreOffice macro and SQL request. Everyone with basic programing skill can customize it.
+
+CustomPOS GUI has been designed to be highly efficient with only one page POS, without sub-page. Only one popup confirmation will show before invoice recording.
+
 No data is stored in client side. All you have to do if you want to save your data is to backup the database.    
   
 CustomPOS main concepts are:
-- You can easily customize this program without advanced programing skill (you need to know basics about programing and networking)
+- You can easily customize this program without advanced programing skill (you need to know basics about programing, networking, SQL)
 - You are the master of your data: full database access allow you to correct any mistakes at their origin, you can also easily extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
