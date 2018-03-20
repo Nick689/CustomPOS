@@ -142,7 +142,7 @@ mysql -h host -u user_name -p custompos < dump.sql
     - sudo mysql -u root -p custompos < dump.sql
 
 ### STEP 6: STORED PROCEDURES INSTALL:
-copy/paste via ssh the file content of stored.procedure.sql directly into an granted mysql session (no file copy needed)
+copy/paste (no file copy needed) via ssh the file content of stored.procedure.sql directly with root access to database
 
 ### STEP 7: CREATE AND GRANT ADMINISTRATOR: (direct database access)
 ```
