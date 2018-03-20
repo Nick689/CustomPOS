@@ -51,14 +51,14 @@ systemctl enable ntp (to active automaticly NTP server on reboot)
 ntpq -p (to check status of NTP server)
 ```
 
-### SSH CONFIG: (on client)
+### SSH CLIENT CONFIG: (on client)
 ```
-ssh-keygen -t rsa            (keep in mind passphrase)
+ssh-keygen -t rsa      (keep in mind passphrase)
 ssh-copy-id user@serverip
-ssh-add             (passphrase will be requested)
+ssh-add                (passphrase will be requested)
 ```
 
-### SERVER CONFIG: (on client over ssh)
+### SSH SERVER CONFIG: (on client over ssh)
 - connect to the server: ssh use@serverip
 - config ssh for more security: sudo nano /etc/ssh/sshd_config
 ```
