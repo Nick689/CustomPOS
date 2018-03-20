@@ -134,9 +134,9 @@ mysql -h host -u user_name -p custompos < dump.sql
     - scp -P sshportnumber dump.sql user@serverIP:/home/user/
 
 
- - Now your dump file is accesible on server, you can load database like this:
-   - cd to dump file location on server (/home/user/)
-   - sudo mysql -u root -p custompos < dump.sql
+  - Now your dump file is accesible on server, you can load database like this:
+    - cd to dump file location on server (/home/user/)
+    - sudo mysql -u root -p custompos < dump.sql
 
 ### STEP 6: STORED PROCEDURES INSTALL:
 copy/paste via ssh the file content of stored.procedure.sql directly into an granted mysql session (no file copy needed)
