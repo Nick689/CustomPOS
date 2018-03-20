@@ -1,6 +1,6 @@
 # INSTALL PROCEDURE (on Debian linux)
 
-## DIAGNOSTIC TOOLS (to get information or access, but do not install anything)
+## DIAGNOSTIC TOOLS (for getting information or access, it will not install anything)
 
 ### Shell command for local or ssh connection:
 ```
