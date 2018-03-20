@@ -37,6 +37,7 @@ ssh user@serverIP mysqldump -u user -p databasename > dump.sql
 
 
 ## STEP 2: SSH SETUP
+
 ### sudo and packages install
 ```
 apt-get install sudo (not installed on debian 9 by default) 
@@ -91,7 +92,9 @@ vm.swappiness=5
 
 ## STEP 3: MARIADB INSTALL: (over ssh)
 sudo apt-get install mariadb-server
+
 sudo mysql_secure_installation
+
 sudo nano /etc/mysql/mariadb.cnf
 ```
 [client-server]
