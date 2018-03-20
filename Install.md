@@ -20,7 +20,10 @@ select user,host from mysql.user;
 ```
 
 ## STEP1: DATABASE DUMP:
-default mysqldump setting is OK, no option are needed
+IF YOU DONT HAVE OLD DATA TO USE, GO TO STEP2 AND USE PROVIDED DUMP FILE
+
+Default mysqldump setting is OK, no option are needed
+
 
 ### if you have mysql remote access with privilege on all table:
 ```
