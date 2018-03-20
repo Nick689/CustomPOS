@@ -6,9 +6,9 @@
 ```
 mysql -u user -p
 ```
-- Shell command for remote connection:
+- Shell command for remote connection (sudo needed some time)
 ```
-mysql -h serverip -u user -p (sudo needed some time)
+mysql -h serverip -u user -p
 ```
 - Shell command to see wich program is listenning on a given port:
 ```
