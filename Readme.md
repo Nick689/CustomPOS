@@ -5,7 +5,7 @@ No data is stored in client side. All you have to do if you want to save your da
   
 CustomPOS main concepts are:
 - You can easily customize this program without advanced programing skill (basic knowledge in programing,networking,linux are needed)
-- You are the master of your data (full database access) allowing you to correct mistakes at their origin, and to easily extract data for statistics, accounting, etc ...
+- You are the master of your data: full database access allow you to correct any mistakes at their origin, you can also easily extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 
