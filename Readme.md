@@ -26,7 +26,7 @@ CustomPOS main concepts are:
 * stkchk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
-* Portable demo version (do not need complex installation)
+* Single user demo version with simple installation
 * Localized versions
 * Sales statistics
 
