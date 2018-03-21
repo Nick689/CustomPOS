@@ -26,7 +26,7 @@ CustomPOS main concepts are:
 * stkchk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
 
 ## Planned features
-* Portable demo version (do not need installation)
+* Portable demo version (do not need complex installation)
 * Localized versions
 * Sales statistics
 
@@ -41,4 +41,4 @@ Despite CustomPOS's capabilities with unlimited users and light-weight server lo
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
-Demo version is planned for only one user at a time. It will use spreadsheets to store data. It will not have the same features than SQL version. LibreOffice's spreadsheet are limited to 1 million rows, enough to store several years of data.
+Demo version is planned for only one user at a time. It will store data differently and will not have the same features than SQL version.
