@@ -19,7 +19,7 @@ CustomPOS main concepts are:
 * Shortkeys allow you to work with keybord only
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
-* Detailed incomes page shows real time incomes of today or any previous day
+* Detailed incomes page shows real time incomes of the day or any previous day
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily,        and,    as this is dangerous
 * InvoiceCHK script can be used to find any invoice data inconsistency
