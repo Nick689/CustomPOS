@@ -23,7 +23,7 @@ CustomPOS main concepts are:
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily,        and,    as this is dangerous
 * InvoiceCHK script can be used to find any invoice data inconsistency
-* stkchk() can be used to find any stock incoherence by comparing it with theoretical quantity compiled from every sales and supplies
+* STKCHK() script compile every sales and supplies and show you wrong stock quantity
 
 ## Planned features
 * Single user demo version with simple installation
