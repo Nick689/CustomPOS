@@ -7,7 +7,7 @@ CustomPOS works in client-server mode, no data is stored in client side. All you
 
 CustomPOS main concepts are:
 - You can easily customize this program (you need to know basics of programing, networking, SQL)
-- You are the master of your data: full database access allow you to correct any mistakes at their origin, you can also easily extract data for statistics, accounting, etc ...
+- You are the master of your data: full database access let you correct any mistakes from their origin, you can also extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 .
