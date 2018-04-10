@@ -6,7 +6,7 @@ CustomPOS GUI is highly efficient with only one page POS, there's no sub-page. O
 CustomPOS works in client-server mode, no data is stored in client side. All you have to do if you want your data safe is to backup the database.
 
 CustomPOS main concepts are:
-- You can easily customize this program (you need to know basics about programing, networking, SQL)
+- You can easily customize this program (you need to know basics of programing, networking, SQL)
 - You are the master of your data: full database access allow you to correct any mistakes at their origin, you can also easily extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
