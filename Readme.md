@@ -22,9 +22,9 @@ CustomPOS main concepts are:
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of the day or any previous day
 * Data export has never been so easy, you are already in Calc
-* Full database access let you correct any mistake easily.  Yes, this is dangerous, this is why there's:
-* InvoiceCHK() script can find any invoice data inconsistency
-* STKCHK() script compile every sales and supplies and show you any wrong quantities in stock
+* Full database access let you correct any mistake easily.  Yes, this is dangerous, the reason for:
+* IVCHK script compare invoice details with recorded header to determine to find incomplet invoice 
+* STKCHK script compile every sales and entries for each item and compare it with the current stock
 
 ## Planned features
 * Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the database server on the user desktop and you get the full version.
