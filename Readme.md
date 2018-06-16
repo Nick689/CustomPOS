@@ -32,14 +32,14 @@ CustomPOS main concepts are:
 * Sales statistics
 
 ## Advancement
-Only Linux-French version is currently available. There's no item edit page, you have to edit database directly. Main features only are implemented and this program is used daily. Stability is good but not as good as other classic program, however data loss cannot happen with transactional SQL. Contact me to get the last version 0.7. Please see changelog in Wiki section for versions notes.
+Only Linux-French version is currently available. The item edit page does not exist yet, but direct database edition works great if you Grant correctly users. Only main features are currently implemented, enough for this program to be used daily since several years now. Stability is good enough wothout been as good as other classic programs. Don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
 
 ## Limitations
-Despite CustomPOS's capabilities with unlimited users and light server load, it's not recommended for big companies, considering that LibreOffice has powerful features that cannot all be locked and advanced users can hack it.
+Despite CustomPOS's capabilities with unlimited users and light server load, it is not recommended for big companies. You have to consider that LibreOffice has powerful features that cannot all be locked so that advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
-Demo version is planned for only one user at a time, it will store data differently (HSQLDB), it will not have the same features than full version.
+Demo version is planned for only one user at a time because of the different database type (HSQLDB), and it will not have every features present in full version.
