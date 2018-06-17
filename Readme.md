@@ -1,7 +1,7 @@
 ## Description
 CustomPOS is a retail Point of Sale system programmed with LibreOffice macros and SQL requests so that you can customize it with only basic programming skill.
 
-CustomPOS GUI is highly efficient with only one page POS, there is no sub-page. Only one popup validation will trigger invoice recording.
+CustomPOS GUI is highly efficient with only one page POS, there is no sub-page. Only one popup validation will run invoice recording.
 
 All datas are stored on server. To save your datas you only have to backup the database.
 
