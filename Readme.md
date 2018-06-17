@@ -42,4 +42,4 @@ Despite CustomPOS's capabilities with unlimited users and light server load, it 
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
-Demo version is planned for only one user at a time because of the different database type (HSQLDB), and it will not have every features present in full version.
+Demo version can manage only one user at a time due to the different type of database (HSQLDB) it use. It will not have every features of the full version.
