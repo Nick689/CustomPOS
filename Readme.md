@@ -32,7 +32,7 @@ CustomPOS main concepts are:
 * Sales statistics
 
 ## Advancement
-Only Linux-French version is currently available. The item edit page does not exist yet, but direct database edition works great if you Grant correctly users. Only main features are currently implemented, enough for daily use. Stability is good enough without been as good as other classic programs. Don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
+Only Linux-French version is currently available. The item edit page does not exist yet, but direct database edition works great if you Grant correctly users. Only main features are currently implemented, enough for daily use. Stability is good without been as good as other classic programs. Don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
 
 ## Limitations
 Despite CustomPOS's capabilities with unlimited users and light server load, it is not recommended for big companies. You have to consider that LibreOffice has powerful features that cannot all be locked so that advanced users can hack it.
