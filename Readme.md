@@ -16,7 +16,7 @@ CustomPOS main concepts are:
 * Multi-user
 * Multi-session
 * Built-in PDF export
-* Barcode printing (code128 only)
+* Barcode printing (code128 or EAN13)
 * Shortkeys allow you to work with keybord only
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
