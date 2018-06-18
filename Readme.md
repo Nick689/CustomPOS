@@ -1,9 +1,9 @@
 ## Description
 CustomPOS is a retail Point of Sale system programmed with macros and SQL requests so that you can customize it with only basic programming skill.
 
-The use of spreadsheet has greatly accelerated CustomPOS's programming. Why reinventing the wheel ? However the POS interface is a great success of efficiency with only one interface page, there is no sub-page, only one popup validation will run invoice recording
+The use of spreadsheet has greatly accelerated the programming. However, CustomPOS is not a simple spreadsheet file, it's performance and reliability rely on the database engine running behind.
 
-CustomPOS is not a simple spreadsheet file, the engine running at the heart of the system is a database server. And you only need a database dump to save all your datas.
+CustomPOS GUI has been desiged to be highly efficient with only one page POS without sub-page, only one popup validation will run invoice recording.
 
 CustomPOS main concepts are:
 - You can easily customize this program (you need to know basics about programing, networking and SQL)
