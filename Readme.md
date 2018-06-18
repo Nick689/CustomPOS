@@ -27,7 +27,7 @@ CustomPOS main concepts are:
 * STKCHK script compile every sales and entries for each item and compare it with the current stock
 
 ## Planned features
-* Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the database server on the user desktop and you get the full version.
+* Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the server  version and use it localy.
 * Localized versions
 * Sales statistics
 
