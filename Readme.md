@@ -25,8 +25,8 @@ CustomPOS main concepts are:
 * Full database access let you correct any mistake easily (with proper privilege).
 
  Yes, this is dangerous, the reason for:
-* IVCHK script compare invoice details with invoice header to determine if it is correct
-* STKCHK script compile every sales and entries for each item and compare it with the current stock
+* IVCHK script compare invoice details with invoice header to detect data incoherency.
+* STKCHK script compile every sales and entries for each item and compare it with the current stock.
 
 ## Planned features
 * Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the server  version and use it localy.
