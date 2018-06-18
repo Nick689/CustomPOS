@@ -1,12 +1,12 @@
 ## Description
-CustomPOS is a retail Point of Sale system based on libreOffice and programmed with macros so that you can customize it with only basic programming skill.
+CustomPOS is a retail Point of Sale system based on LibreOffice and programmed with macros so that you can customize it with only basic programming skill.
 
 The use of spreadsheet has greatly accelerated the programming. However, CustomPOS is not a simple spreadsheet file, it's performance and reliability rely on the database engine running behind.
 
-CustomPOS GUI has been designed with the most possible efficiency. That is why POS module is made of one page only without sub-page, only one popup validation will run invoice recording.
+CustomPOS GUI has been designed with the most possible efficiency. That is why POS module is made of only one page without sub-page, only one popup validation will run invoice recording.
 
 CustomPOS main concepts are:
-- You can easily customize this program (you need to know basics about programing, networking and SQL)
+- You can easily customize it yourself (you need to know basics about programing, networking and SQL)
 - You are the master of your data: full database access let you correct any mistakes at their origin, you can also extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
@@ -24,7 +24,7 @@ CustomPOS main concepts are:
 * Data export has never been so easy, you are already in Calc
 * Full database access let you correct any mistake easily (with proper privilege).
 
-  Yes, this is dangerous, the reason for:
+ Yes, this is dangerous, the reason for:
 * IVCHK script compare invoice details with invoice header to determine if it is correct
 * STKCHK script compile every sales and entries for each item and compare it with the current stock
 
