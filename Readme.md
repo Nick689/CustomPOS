@@ -7,7 +7,7 @@ CustomPOS's GUI has been designed to have the highest possible efficiency. That 
 
 CustomPOS main concepts are:
 - You can easily customize it yourself (you need to know basics about programing, networking and SQL)
-- You are the master of your data: full database access let you correct any mistakes at their origin, you can also extract data for statistics, accounting, etc ...
+- You are the master of your data: full database access let you correct any mistakes at their origin without polluting your database with correcting records, you can also extract data for statistics, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 .
@@ -17,7 +17,7 @@ CustomPOS main concepts are:
 * Multi-session
 * Built-in PDF export
 * Barcode printing (code128 or EAN13)
-* Shortkeys allow you to work with keybord only
+* Shortcut keys allow you to work with keybord only
 * Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of the day or any previous day
