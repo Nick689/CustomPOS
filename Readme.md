@@ -18,11 +18,11 @@ CustomPOS main concepts are:
 * Built-in PDF export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
-* Advanced user right management
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of the day or any previous day
 * Data export has never been so easy, you are already in Calc
-* Full database access let you correct any mistake easily (with proper privilege).
+* Advanced user right management based on users database privilege
+* Full database access let you correct any mistake easily
 
  Yes, this is dangerous, the reason for:
 * IVCHK script compare invoice details with invoice header to detect data incoherency.
