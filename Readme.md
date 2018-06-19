@@ -7,7 +7,7 @@ CustomPOS's GUI has been designed to have the highest possible efficiency. That 
 
 CustomPOS main concepts are:
 - You can easily customize it yourself (you need to know basics about programing, networking and SQL)
-- You are the master of your data: full database access let you correct any mistakes at their origin without polluting your database with correcting records, you can also extract data for statistics, accounting, etc ...
+- You are the master of your data: full database access let you correct any mistakes at their origin without polluting your database with correcting records, you can also extract datas for statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 .
