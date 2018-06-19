@@ -26,7 +26,7 @@ CustomPOS main concepts are:
 
  Yes, this is dangerous, the reason for:
 * IVCHK script compare invoice details with invoice header to detect data incoherency.
-* STKCHK script compile every sales and entries for each item and compare it with the current stock.
+* STKCHK script compile every sales and entries for each item and compare it with current stock.
 
 ## Planned features
 * Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the server  version and use it localy.
