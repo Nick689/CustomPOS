@@ -1,6 +1,6 @@
 # INSTALL PROCEDURE (for Debian linux)
 
-# COMMAND(when install is finished)
+# COMMAND (when install is finished)
 SSH CONNECT:	ssh user@serverip -p portnumber
 
 REMOTE CONNECT:	mysql -h serverip -P mariadbport -u root -p
@@ -34,12 +34,12 @@ root ALL=(ALL:ALL) ALL
 user ALL=(ALL:ALL) ALL
 ```
 
-### on client:
+### on client
 ssh-keygen -t rsa            	(save securely your passphrase)
 
 ssh-copy-id user@serverip	(passphrase needed, if no key is found, reload key with:	ssh-add ~/.ssh/id_rsa)
 
-### on server:
+### on server
 nano /etc/ssh/sshd_config
 ```
 Port sshport
@@ -56,7 +56,7 @@ MaxAuthTries 10
 ClientAliveInterval 600
 ClientAliveCountMax 0
 ```
-### restart ssh server: 
+### restart ssh server
 /etc/init.d/ssh reload
 
 # TIME SERVER (customPOS use client date, they must be up to date)
@@ -132,7 +132,7 @@ crontab -e
 ```
 
 # USERS CREATE & PRIVILEGE
-### CREATE AND GRANT ADMINISTRATOR: (access via LibreOffice Base) (be carefull with these privileges: accidental mouse move will creat new inserts)
+### CREATE AND GRANT ADMINISTRATOR (access via LibreOffice-Base, be carefull with these privileges: accidental mouse move will creat new inserts)
 ```
 CREATE USER 'admin'@'x.x.x.%' IDENTIFIED BY 'password';
 GRANT ALL ON custompos.customer TO 'admin'@'x.x.x.%';
@@ -149,7 +149,7 @@ GRANT SELECT ON custompos.output TO 'admin'@'x.x.x.%';
 GRANT ALL ON custompos.utilisateur TO 'admin'@'x.x.x.%';
 ```
 
-### CREATE AND GRANT ASSISTANT: (access via LibreOffice Base) (example to adapt)
+### CREATE AND GRANT ASSISTANT (access via LibreOffice-Base) (example to adapt)
 ```
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'assistant'@'x.x.x.%';
 GRANT SELECT,UPDATE (datefact,utilisateur,numclient,nom,lieu,transport,bc,pay1,pay2,pay3,pay4,mode1,mode2,mode3,mode4,rendu,typefact,echeance,lettre,contact,chq1,chq2,chq3,chq4,bl) ON `custompos`.`fact` TO 'assistant'@'x.x.x.%';
@@ -162,7 +162,7 @@ GRANT SELECT ON `custompos`.`entreedet` TO 'assistant'@'x.x.x.%';
 GRANT SELECT ON custompos.output TO 'assistant'@'x.x.x.%';
 ```
 
-### CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
+### CREATE AND GRANT PRIVILEGED USERS (for customPOS access)
 ```
 CREATE USER 'user'@'x.x.x.%' IDENTIFIED BY 'password';
 GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%'
@@ -179,7 +179,7 @@ GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%'
 GRANT EXECUTE ON PROCEDURE custompos.fdj2 TO 'user'@'x.x.x.%'
 ```
 
-### CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
+### CREATE AND GRANT RESTRICTED USERS (for customPOS access)
 ```
 CREATE USER 'user'@'x.x.x.%' IDENTIFIED BY 'password'
 GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%'
