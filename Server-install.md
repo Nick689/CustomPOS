@@ -5,7 +5,7 @@ SSH CONNECT:	ssh user@serverip -p portnumber
 
 REMOTE CONNECT:	mysql -h serverip -P mariadbport -u root -p
 
-DUMP:	mysqldump -h serverip -P mariadbport -u dump -p custompos > dump.sql	(need select privilege)
+DUMP:	mysqldump -h serverip -P mariadbport -u dump -p custompos > dump.sql	(need remote access)
 
 DUMP:	ssh user@serverip -p sshport mysqldump -u root -p custompos > dump.sql
 
