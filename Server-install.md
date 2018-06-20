@@ -2,18 +2,28 @@
 
 # COMMAND (when install is finished)
 SSH:	ssh user@serverip -p portnumber
+
 MARIADB:	mysql -h serverip -P mariadbport -u dump -p					(need select privilege)
+
 DUMP:	mysqldump -h serverip -P mariadbport -u dump -p custompos > dump.sql	(need select privilege)
+
 DUMP:	ssh user@serverip -p sshport mysqldump -u root -p custompos > dump.sql
+
 LOCAL RESTORE:		mysql -u root -p custompos < dump.sql
+
 REMOTE RESTORE: on client copy dump file to /home/user/dump.sql  then:
+
 scp -p sshport dump.sql user@serverip:/home/user/dump.sql
+
 	on server cd /home/user/  then:
+
 mysql -u root -p custompos < dump.sql
 
 # SSH SETUP
 apt-get install openssh-server	(if not already done)
-apt-get install sudo 			(root is often brutforced and should be accessible only localy) 
+
+apt-get install sudo 			(root is often brutforced and should be accessible only localy)
+
 adduser user 				(if needed)
 usermod -aG sudo user
 nano /etc/sudoers
