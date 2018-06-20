@@ -65,9 +65,9 @@ nano /etc/ntp.conf 	(change for your country NTP pool)
 
 systemctl enable ntp	(for automatic NTP start on boot)
 
-ntpq -p		(to check status of NTP server)
+ntpq -p		(to check if the server is synchronized)
 
-timedatectl		(to check status of NTP client)
+sudo ntpdate *serverip*		(to check if client can connect to the server)
 
 # MARIADB
 apt-get install mariadb-server	(if needed)
