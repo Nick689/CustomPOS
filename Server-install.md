@@ -1,76 +1,36 @@
-# INSTALL PROCEDURE (on Debian linux)
+# INSTALL PROCEDURE (for Debian linux)
 
-## DIAGNOSTIC TOOLS (for getting information or access, it will not install anything)
+# COMMAND (when install is finished)
+SSH:	ssh user@serverip -p portnumber
+MARIADB:	mysql -h serverip -P mariadbport -u dump -p					(need select privilege)
+DUMP:	mysqldump -h serverip -P mariadbport -u dump -p custompos > dump.sql	(need select privilege)
+DUMP:	ssh user@serverip -p sshport mysqldump -u root -p custompos > dump.sql
+LOCAL RESTORE:		mysql -u root -p custompos < dump.sql
+REMOTE RESTORE: on client copy dump file to /home/user/dump.sql  then:
+scp -p sshport dump.sql user@serverip:/home/user/dump.sql
+	on server cd /home/user/  then:
+mysql -u root -p custompos < dump.sql
 
-- Shell command for local or ssh connection:
+# SSH SETUP
+apt-get install openssh-server	(if not already done)
+apt-get install sudo 			(root is often brutforced and should be accessible only localy) 
+adduser user 				(if needed)
+usermod -aG sudo user
+nano /etc/sudoers
 ```
-mysql -u user -p
+root ALL=(ALL:ALL) ALL
+user ALL=(ALL:ALL) ALL
 ```
-- Shell command for remote connection (sudo needed some time)
+## on client:
+ssh-keygen -t rsa            	(save securely your passphrase)
+ssh-copy-id user@serverip	(passphrase needed, if no key is found, reload key with:	ssh-add ~/.ssh/id_rsa)
+## on server:
+nano /etc/ssh/sshd_config
 ```
-mysql -h serverip -u user -p
-```
-- Shell command to see wich program is listenning on a given port:
-```
-sudo netstat -anp | grep portnumber
-```
-- SQL command to see all database users: (need ALL PRIVILEGES)
-```
-select user,host from mysql.user;
-```
-
-## STEP1: DATABASE DUMP:
-IF YOU DONT HAVE OLD DATA TO USE, GO TO STEP2 AND USE PROVIDED DUMP FILE
-
-Default mysqldump setting is OK, no option are needed
-
-
-### if you have mysql remote access with privilege on all table:
-```
-mysqldump -h serverip -P port -u root -p databasename > dump.sql
-```
-
-### if you have only ssh access:
-```
-ssh user@serverIP mysqldump -u user -p databasename > dump.sql
-```
- 
- 
-### In both case dump.sql is now in your /home
-
-
-## STEP 2: CONNECTION & HARWARE SETUP
-
-IF YOU ARE JUST TRYING THIS PROGRAM, YOU CAN INSTALL EVERYTHING ON THE SAME PC AND BYPASS EVERYTHING ABOUT SSH
-
-### sudo and packages install
-```
-apt-get install sudo (not installed on debian 9 by default) 
-add sudoers (there is some issue with root access over ssh):
-adduser username
-adduser username sudo
-apt-get install openssh-server (if not already done)
-apt-get install ntp (install NTP server, customPOS use client date, every client must be up to date) 
-nano /etc/ntp.conf (if you want to change NTP pool)
-systemctl enable ntp (to active automaticly NTP server on reboot)
-ntpq -p (to check status of NTP server)
-```
-
-### SSH CLIENT CONFIG: (on client)
-```
-ssh-keygen -t rsa      (keep in mind passphrase)
-ssh-copy-id user@serverip
-ssh-add                (passphrase will be requested)
-```
-
-### SSH SERVER CONFIG: (on client over ssh)
-- connect to the server: ssh use@serverip
-- config ssh for more security: sudo nano /etc/ssh/sshd_config
-```
-Port portnumber (default port 22 is not advised)
+Port sshport
 Protocol 2
 PubkeyAuthentication yes
-PermitRootLogin no
+PermitRootLogin no		(before activing this, verify if the user access works)
 RSAAuthentication no
 UsePAM no
 KerberosAuthentication no
@@ -81,146 +41,132 @@ MaxAuthTries 10
 ClientAliveInterval 600
 ClientAliveCountMax 0
 ```
+## restart ssh server: 
+/etc/init.d/ssh reload
 
-- restart ssh to make changes: sudo /etc/init.d/ssh reload
+# TIME SERVER (customPOS use client date, they must be up to date)
+apt-get install ntp
+nano /etc/ntp.conf 	(change for your country NTP pool)
+systemctl enable ntp	(for automatic NTP start on boot)
+ntpq -p		(to check status of NTP server)
+timedatectl		(to check status of NTP client)
 
-- reconnect with: ssh user@serverip -p portnumber
-
-- server config for SSD: sudo nano /etc/fstab
-```
-tmpfs      /tmp            tmpfs        defaults,size=1g           0    0
-tmpfs /var/log tmpfs defaults,nosuid,nodev,noatime,mode=0755,size=5% 0 0
-sudo nano /etc/sysctl.conf
-vm.swappiness=5
-```
-
-
-## STEP 3: MARIADB INSTALL: (over ssh)
-sudo apt-get install mariadb-server
-
-sudo mysql_secure_installation
-
-sudo nano /etc/mysql/mariadb.cnf
+# MARIADB
+apt-get install mariadb-server	(if needed)
+remove every *.cnf file in /etc/mysql and subdirectories except:    debian.cnf  debian-start  mariadb.cnf  my.cnf
+mysql_secure_installation
+nano /etc/mysql/mariadb.cnf
 ```
 [client-server]
-port=????port number
+port=mariadbport
 
 [mysqld]
 character_set_server=latin1
 sql_mode=STRICT_ALL_TABLES
 default-storage-engine=InnoDB
+default_tmp_storage_engine=InnoDB
+enforce_storage_engine=InnoDB
 datadir=/var/lib/mysql/
 temp-pool
 loose-innodb_file_per_table
 innodb_buffer_pool_instances=2
 innodb_buffer_pool_size=4G
+
+[mysqldump]
+quick
+quote-names
+max_allowed_packet      = 16M
 ```
-sudo /etc/init.d/mysql reload
+/etc/init.d/mysql reload
+check if mariadb is listening on your chosen port:	netstat -anp | grep portnumber
+if not you may have duplicate config file
 
-### STEP 4: FIRST CONNECTION AND DATABASE CREATION: (over ssh or direct access)
-sudo mysql -u root -p
+# CREATE DATABASE & TABLES & STORED PROCEDURES
+ssh user@serverip -p portnumber
+mysql -u root -p
+copy/paste (ctrl+shift+v) the content of tables.sql directly on mysql session
+copy/paste (ctrl+shift+v) the content of stored.procedure.sql directly on mysql session
+
+# AUTOMATIC BACKUP (example for weekly backup everyday at 22h00, older files will be overwrited)
+create and grant 'dump'@'localhost' :
 ```
-CREATE DATABASE custompos;
-CREATE USER  'root'@'serverip' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON custompos.* TO 'root'@'serverip' WITH GRANT OPTION;
-exit
+CREATE USER 'dump'@'localhost' IDENTIFIED BY 'password';
+GRANT LOCK TABLES,SELECT ON custompos.* TO 'dump'@'localhost';
 ```
-
-### STEP 5: DATABASE COPY:
-
-- Method 1: (need mysql remote access with all privilege)
+crontab -e
 ```
-mysql -h host -u user_name -p custompos < dump.sql
-```
-
-- Method 2 via ssh/scp:
-  - transfer database via ssh/scp:
-    - cd to where is your dump file on client computer
-    - scp -P sshportnumber dump.sql user@serverIP:/home/user/
-
-
-  - Now your dump file is accesible on server, you can load database like this:
-    - cd to dump file location on server (/home/user/)
-    - sudo mysql -u root -p custompos < dump.sql
-
-### STEP 6: STORED PROCEDURES INSTALL:
-copy/paste (no file copy needed) via ssh the file content of stored.procedure.sql directly with root access to database
-
-### STEP 7: CREATE AND GRANT ADMINISTRATOR: (for direct database access)
-- for SSH or bar metal access
-```
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL ON production.customer TO 'admin'@'localhost';
-GRANT SELECT,UPDATE,DELETE ON production.devis TO 'admin'@'localhost';
-GRANT ALL ON production.devisdet TO 'admin'@'localhost';
-GRANT SELECT,UPDATE,DELETE ON production.entree TO 'admin'@'localhost';
-GRANT ALL ON production.entreedet TO 'admin'@'localhost';
-GRANT SELECT,UPDATE,DELETE ON production.fact TO 'admin'@'localhost';
-GRANT ALL ON production.factdet TO 'admin'@'localhost';
-GRANT ALL ON production.fourn TO 'admin'@'localhost';
-GRANT SELECT,UPDATE,DELETE ON production.regl TO 'admin'@'localhost';
-GRANT ALL ON production.stk TO 'admin'@'localhost';
-GRANT SELECT ON production.output TO 'admin'@'localhost';
-GRANT ALL ON production.utilisateur TO 'admin'@'localhost';
-GRANT EXECUTE ON PROCEDURE production.soldes TO 'admin'@'localhost';
-GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'localhost';
-GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'localhost';
+0 22 * * 1 mysqldump -u dump -ppassword custompos > /home/user/dump1.sql
+0 22 * * 2 mysqldump -u dump -ppassword custompos > /home/user/dump2.sql
+0 22 * * 3 mysqldump -u dump -ppassword custompos > /home/user/dump3.sql
+0 22 * * 4 mysqldump -u dump -ppassword custompos > /home/user/dump4.sql
+0 22 * * 5 mysqldump -u dump -ppassword custompos > /home/user/dump5.sql
+0 22 * * 6 mysqldump -u dump -ppassword custompos > /home/user/dump6.sql
+0 22 * * 0 mysqldump -u dump -ppassword custompos > /home/user/dump0.sql
 ```
 
-- for mysql client access
-
-Incomplet IP number with % allow you to connect from every PC on your network
+# USERS CREATE & PRIVILEGE
+## CREATE AND GRANT ADMINISTRATOR: (access via LibreOffice Base) (be carefull with these privileges: accidental mouse move will creat new inserts)
 ```
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL ON production.customer TO 'admin'@'888.888.888.%'
-GRANT SELECT,UPDATE,DELETE ON production.devis TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.devisdet TO 'admin'@'888.888.888.%'
-GRANT SELECT,UPDATE,DELETE ON production.entree TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.entreedet TO 'admin'@'888.888.888.%'
-GRANT SELECT,UPDATE,DELETE ON production.fact TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.factdet TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.fourn TO 'admin'@'888.888.888.%'
-GRANT SELECT,UPDATE,DELETE ON production.regl TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.stk TO 'admin'@'888.888.888.%'
-GRANT SELECT ON production.output TO 'admin'@'888.888.888.%'
-GRANT ALL ON production.utilisateur TO 'admin'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.soldes TO 'admin'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.solde TO 'admin'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.fdj TO 'admin'@'888.888.888.%'
+CREATE USER 'admin'@'x.x.x.%' IDENTIFIED BY 'password';
+GRANT ALL ON custompos.customer TO 'admin'@'x.x.x.%';
+GRANT SELECT,UPDATE,DELETE ON custompos.devis TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.devisdet TO 'admin'@'x.x.x.%';
+GRANT SELECT,UPDATE,DELETE ON custompos.entree TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.entreedet TO 'admin'@'x.x.x.%';
+GRANT SELECT,UPDATE,DELETE ON custompos.fact TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.factdet TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.fourn TO 'admin'@'x.x.x.%';
+GRANT SELECT,UPDATE,DELETE ON custompos.regl TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.stk TO 'admin'@'x.x.x.%';
+GRANT SELECT ON custompos.output TO 'admin'@'x.x.x.%';
+GRANT ALL ON custompos.utilisateur TO 'admin'@'x.x.x.%';
 ```
 
-### STEP 8: CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
+## CREATE AND GRANT ASSISTANT: (access via LibreOffice Base) (example to adapt)
 ```
-CREATE USER 'user1'@'888.888.888.%' IDENTIFIED BY 'pass1pass2';
-GRANT SELECT,UPDATE ON production.customer TO 'user1'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.devis TO 'user1'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.devisdet TO 'user1'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.fact TO 'user1'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.factdet TO 'user1'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.regl TO 'user1'@'888.888.888.%'
-GRANT SELECT,UPDATE ON production.stk TO 'user1'@'888.888.888.%'
-GRANT SELECT ON production.utilisateur TO 'user1'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.soldes TO 'user1'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.solde TO 'user1'@'888.888.888.%'
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE (datefact,utilisateur,numclient,nom,lieu,transport,bc,pay1,pay2,pay3,pay4,mode1,mode2,mode3,mode4,rendu,typefact,echeance,lettre,contact,chq1,chq2,chq3,chq4,bl) ON `custompos`.`fact` TO 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE (design) ON `custompos`.`factdet` TO 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE ON `custompos`.`regl` TO 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE ON `custompos`.`stk` TO 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE ON `custompos`.`customer` TO 'assistant'@'x.x.x.%';
+GRANT SELECT,UPDATE (nom,fact) ON `custompos`.`entree` TO 'assistant'@'x.x.x.%';
+GRANT SELECT ON `custompos`.`entreedet` TO 'assistant'@'x.x.x.%';
+GRANT SELECT ON custompos.output TO 'assistant'@'x.x.x.%';
 ```
 
-### STEP 9: CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
+## CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
 ```
-CREATE USER 'user2'@'888.888.888.%' IDENTIFIED BY 'pass1pass2;
-GRANT SELECT,UPDATE ON production.customer TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.devis TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.devisdet TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.entree TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.entreedet TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.fact TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.factdet TO 'user2'@'888.888.888.%'
-GRANT SELECT ON production.fourn TO 'user2'@'888.888.888.%'
-GRANT SELECT,INSERT ON production.regl TO 'user2'@'888.888.888.%'
-GRANT SELECT,UPDATE ON production.stk TO 'user2'@'888.888.888.%'
-GRANT SELECT ON production.output TO 'user2'@'888.888.888.%'
-GRANT SELECT ON production.utilisateur TO 'user2'@'888.888.888.%'
-GRANT UPDATE (freecell) ON production.utilisateur TO 'user2'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.soldes TO 'user2'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.solde TO 'user2'@'888.888.888.%'
-GRANT EXECUTE ON PROCEDURE production.fdj TO 'user2'@'888.888.888.%'
+CREATE USER 'user'@'x.x.x.%' IDENTIFIED BY 'password';
+GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.devis TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.devisdet TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.fact TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.factdet TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.regl TO 'user'@'x.x.x.%'
+GRANT SELECT,UPDATE ON custompos.stk TO 'user'@'x.x.x.%'
+GRANT SELECT ON custompos.utilisateur TO 'user'@'x.x.x.%'
+GRANT UPDATE (freecell) ON custompos.utilisateur TO 'user'@'x.x.x.%'
+GRANT EXECUTE ON PROCEDURE custompos.balances TO 'user'@'x.x.x.%'
+GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%'
+GRANT EXECUTE ON PROCEDURE custompos.fdj2 TO 'user'@'x.x.x.%'
+```
+
+## CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
+```
+CREATE USER 'user'@'x.x.x.%' IDENTIFIED BY 'password'
+GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.devis TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.devisdet TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.entree TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.entreedet TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.fact TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.factdet TO 'user'@'x.x.x.%'
+GRANT SELECT ON custompos.fourn TO 'user'@'x.x.x.%'
+GRANT SELECT,INSERT ON custompos.regl TO 'user'@'x.x.x.%'
+GRANT SELECT,UPDATE ON custompos.stk TO 'user'@'x.x.x.%'
+GRANT SELECT ON custompos.output TO 'user'@'x.x.x.%'
+GRANT SELECT ON custompos.utilisateur TO 'user'@'x.x.x.%'
+GRANT EXECUTE ON PROCEDURE custompos.balances TO 'user'@'x.x.x.%'
+GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%'
 ```
