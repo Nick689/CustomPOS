@@ -4,9 +4,9 @@ for copy/paste on terminal use ctrl+shift+v (you must activate terminal shortcut
 # COMMAND(when install is finished)
 SSH CONNECT:	ssh *user@serverip* -p portnumber
 
-REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport *-u root -p
+REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport*-u root -p
 
-DUMP:	mysqldump -h *serverip* -P *mariadbport *-u dump -p custompos > dump.sql	(need select privilege)
+DUMP:	mysqldump -h *serverip* -P *mariadbport*-u dump -p custompos > dump.sql	(need select privilege)
 
 DUMP:	ssh *user@serverip* -p sshport mysqldump -u root -p custompos > dump.sql
 
@@ -30,7 +30,7 @@ usermod -aG sudo *user*
 nano /etc/sudoers
 ```
 root ALL=(ALL:ALL) ALL
-*user* ALL=(ALL:ALL) ALL
+user ALL=(ALL:ALL) ALL
 ```
 
 ### on client:
@@ -121,13 +121,13 @@ GRANT LOCK TABLES,SELECT ON custompos.* TO 'dump'@'localhost';
 ```
 crontab -e
 ```
-0 22 * * 1 mysqldump -u dump -ppassword custompos > /home/*user*/dump1.sql
-0 22 * * 2 mysqldump -u dump -ppassword custompos > /home/*user*/dump2.sql
-0 22 * * 3 mysqldump -u dump -ppassword custompos > /home/*user*/dump3.sql
-0 22 * * 4 mysqldump -u dump -ppassword custompos > /home/*user*/dump4.sql
-0 22 * * 5 mysqldump -u dump -ppassword custompos > /home/*user*/dump5.sql
-0 22 * * 6 mysqldump -u dump -ppassword custompos > /home/*user*/dump6.sql
-0 22 * * 0 mysqldump -u dump -ppassword custompos > /home/*user*/dump0.sql
+0 22 * * 1 mysqldump -u dump -ppassword custompos > /home/user/dump1.sql
+0 22 * * 2 mysqldump -u dump -ppassword custompos > /home/user/dump2.sql
+0 22 * * 3 mysqldump -u dump -ppassword custompos > /home/user/dump3.sql
+0 22 * * 4 mysqldump -u dump -ppassword custompos > /home/user/dump4.sql
+0 22 * * 5 mysqldump -u dump -ppassword custompos > /home/user/dump5.sql
+0 22 * * 6 mysqldump -u dump -ppassword custompos > /home/user/dump6.sql
+0 22 * * 0 mysqldump -u dump -ppassword custompos > /home/user/dump0.sql
 ```
 
 # USERS CREATE & PRIVILEGE
