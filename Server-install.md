@@ -1,4 +1,5 @@
 # INSTALL PROCEDURE (for Debian linux)
+for copy/paste on terminal use ctrl+shift+v 
 
 # COMMAND (when install is finished)
 SSH CONNECT:	ssh user@serverip -p portnumber
