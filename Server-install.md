@@ -163,36 +163,36 @@ GRANT SELECT ON custompos.output TO 'assistant'@'x.x.x.%';
 
 ### CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
 ```
-CREATE USER *'user'@'x.x.x.%'* IDENTIFIED BY 'password';
-GRANT SELECT,UPDATE ON custompos.customer TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.devis TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.devisdet TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.fact TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.factdet TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.regl TO *'user'@'x.x.x.%'*
-GRANT SELECT,UPDATE ON custompos.stk TO *'user'@'x.x.x.%'*
-GRANT SELECT ON custompos.utilisateur TO *'user'@'x.x.x.%'*
-GRANT UPDATE (freecell) ON custompos.utilisateur TO *'user'@'x.x.x.%'*
-GRANT EXECUTE ON PROCEDURE custompos.balances TO *'user'@'x.x.x.%'*
-GRANT EXECUTE ON PROCEDURE custompos.balance TO *'user'@'x.x.x.%'*
-GRANT EXECUTE ON PROCEDURE custompos.fdj2 TO *'user'@'x.x.x.%'*
+CREATE USER 'user'@'x.x.x.%'  IDENTIFIED BY 'password';
+GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.devis TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.devisdet TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.fact TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.factdet TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.regl TO 'user'@'x.x.x.%' 
+GRANT SELECT,UPDATE ON custompos.stk TO 'user'@'x.x.x.%' 
+GRANT SELECT ON custompos.utilisateur TO 'user'@'x.x.x.%' 
+GRANT UPDATE (freecell) ON custompos.utilisateur TO 'user'@'x.x.x.%' 
+GRANT EXECUTE ON PROCEDURE custompos.balances TO 'user'@'x.x.x.%' 
+GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%' 
+GRANT EXECUTE ON PROCEDURE custompos.fdj2 TO 'user'@'x.x.x.%' 
 ```
 
 ### CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
 ```
-CREATE USER *'user'@'x.x.x.%'* IDENTIFIED BY 'password'
-GRANT SELECT,UPDATE ON custompos.customer TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.devis TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.devisdet TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.entree TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.entreedet TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.fact TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.factdet TO *'user'@'x.x.x.%'*
-GRANT SELECT ON custompos.fourn TO *'user'@'x.x.x.%'*
-GRANT SELECT,INSERT ON custompos.regl TO *'user'@'x.x.x.%'*
-GRANT SELECT,UPDATE ON custompos.stk TO *'user'@'x.x.x.%'*
-GRANT SELECT ON custompos.output TO *'user'@'x.x.x.%'*
-GRANT SELECT ON custompos.utilisateur TO *'user'@'x.x.x.%'*
-GRANT EXECUTE ON PROCEDURE custompos.balances TO *'user'@'x.x.x.%'*
-GRANT EXECUTE ON PROCEDURE custompos.balance TO *'user'@'x.x.x.%'*
+CREATE USER 'user'@'x.x.x.%'  IDENTIFIED BY 'password'
+GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.devis TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.devisdet TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.entree TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.entreedet TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.fact TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.factdet TO 'user'@'x.x.x.%' 
+GRANT SELECT ON custompos.fourn TO 'user'@'x.x.x.%' 
+GRANT SELECT,INSERT ON custompos.regl TO 'user'@'x.x.x.%' 
+GRANT SELECT,UPDATE ON custompos.stk TO 'user'@'x.x.x.%' 
+GRANT SELECT ON custompos.output TO 'user'@'x.x.x.%' 
+GRANT SELECT ON custompos.utilisateur TO 'user'@'x.x.x.%' 
+GRANT EXECUTE ON PROCEDURE custompos.balances TO 'user'@'x.x.x.%' 
+GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%' 
 ```
