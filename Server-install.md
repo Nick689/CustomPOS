@@ -1,7 +1,7 @@
 # INSTALL PROCEDURE (for Debian linux)
 for copy/paste on terminal use ctrl+shift+v (you must activate terminal shortcut keys)
 
-# COMMAND(when install is finished)
+# COMMANDS (when install is finished)
 SSH CONNECT:	ssh *user@serverip* -p portnumber
 
 REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport*-u root -p
