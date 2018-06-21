@@ -100,7 +100,7 @@ max_allowed_packet      = 16M
 ```
 /etc/init.d/mysql reload
 
-check if mariadb is listening on your chosen port:	netstat -anp | grep portnumber
+check if mariadb is listening on your chosen port with:	netstat -anp | grep *portnumber*
 
 if not you may have duplicate config file
 
