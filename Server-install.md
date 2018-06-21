@@ -4,7 +4,7 @@ for copy/paste on terminal use ctrl+shift+v (you must activate terminal shortcut
 # COMMANDS (when install is finished)
 SSH CONNECT:	ssh *user@serverip* -p portnumber
 
-REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport*-u root -p
+REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport* -u root -p
 
 DUMP:	mysqldump -h *serverip* -P *mariadbport*-u dump -p custompos > dump.sql	(need select privilege)
 
