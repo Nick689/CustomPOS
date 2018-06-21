@@ -2,11 +2,11 @@
 for copy/paste on terminal use ctrl+shift+v (you must activate terminal shortcut keys)
 
 # COMMANDS (when install is finished)
-SSH CONNECT:	ssh *user@serverip* -p portnumber
+SSH CONNECT:	ssh *user@serverip* -p *portnumber*
 
 REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport* -u root -p
 
-DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql	(need select privilege)
+DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql
 
 DUMP:	ssh *user@serverip* -p sshport mysqldump -u root -p custompos > dump.sql
 
@@ -33,12 +33,12 @@ root ALL=(ALL:ALL) ALL
 user ALL=(ALL:ALL) ALL
 ```
 
-### on client:
+### on client
 ssh-keygen -t rsa            	(save securely your passphrase)
 
 ssh-copy-id *user@serverip*	(passphrase needed, if no key is found, reload key with:	ssh-add ~/.ssh/id_rsa)
 
-### on server:
+### on server
 nano /etc/ssh/sshd_config
 ```
 Port sshport
@@ -55,7 +55,7 @@ MaxAuthTries 10
 ClientAliveInterval 600
 ClientAliveCountMax 0
 ```
-### restart ssh server: 
+### restart ssh server
 /etc/init.d/ssh reload
 
 # TIME SERVER (customPOS use client date, they must be up to date)
@@ -65,9 +65,9 @@ nano /etc/ntp.conf 	(change for your country NTP pool)
 
 systemctl enable ntp	(for automatic NTP start on boot)
 
-ntpq -p		(to check if the server is synchronized)
+ntpq -p (to check if the server is synchronized)
 
-sudo ntpdate *serverip*		(to check if client can connect to the server)
+sudo ntpdate serverip (to check if client can connect to the server)
 
 # MARIADB
 apt-get install mariadb-server	(if needed)
@@ -100,12 +100,12 @@ max_allowed_packet      = 16M
 ```
 /etc/init.d/mysql reload
 
-check if mariadb is listening on your chosen port with:	netstat -anp | grep *portnumber*
+check if mariadb is listening on your chosen port:	netstat -anp | grep *portnumber*
 
 if not you may have duplicate config file
 
 # CREATE DATABASE & TABLES & STORED PROCEDURES
-ssh *user@serverip* -p portnumber
+ssh *user@serverip* -p *portnumber*
 
 mysql -u root -p
 
@@ -130,8 +130,8 @@ crontab -e
 0 22 * * 0 mysqldump -u dump -ppassword custompos > /home/user/dump0.sql
 ```
 
-# USERS CREATE & PRIVILEGE
-### CREATE AND GRANT ADMINISTRATOR: (access via LibreOffice-Base) (be carefull with these privileges: accidental mouse move will creat new inserts)
+# USERS & PRIVILEGE
+### CREATE AND GRANT ADMINISTRATOR (access via LibreOffice-Base, be carefull with these privileges: accidental mouse move will creat new inserts)
 ```
 CREATE USER 'admin'@'x.x.x.%' IDENTIFIED BY 'password';
 GRANT ALL ON custompos.customer TO 'admin'@'x.x.x.%';
@@ -148,7 +148,7 @@ GRANT SELECT ON custompos.output TO 'admin'@'x.x.x.%';
 GRANT ALL ON custompos.utilisateur TO 'admin'@'x.x.x.%';
 ```
 
-### CREATE AND GRANT ASSISTANT: (access via LibreOffice-Base) (example to adapt)
+### CREATE AND GRANT ASSISTANT (access via LibreOffice-Base, Example to adapt)
 ```
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'assistant'@'x.x.x.%';
 GRANT SELECT,UPDATE (datefact,utilisateur,numclient,nom,lieu,transport,bc,pay1,pay2,pay3,pay4,mode1,mode2,mode3,mode4,rendu,typefact,echeance,lettre,contact,chq1,chq2,chq3,chq4,bl) ON `custompos`.`fact` TO 'assistant'@'x.x.x.%';
@@ -161,7 +161,7 @@ GRANT SELECT ON `custompos`.`entreedet` TO 'assistant'@'x.x.x.%';
 GRANT SELECT ON custompos.output TO 'assistant'@'x.x.x.%';
 ```
 
-### CREATE AND GRANT PRIVILEGED USERS: (for customPOS access)
+### CREATE AND GRANT PRIVILEGED USERS (for customPOS access)
 ```
 CREATE USER 'user'@'x.x.x.%'  IDENTIFIED BY 'password';
 GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%' 
@@ -178,7 +178,7 @@ GRANT EXECUTE ON PROCEDURE custompos.balance TO 'user'@'x.x.x.%'
 GRANT EXECUTE ON PROCEDURE custompos.fdj2 TO 'user'@'x.x.x.%' 
 ```
 
-### CREATE AND GRANT RESTRICTED USERS: (for customPOS access)
+### CREATE AND GRANT RESTRICTED USERS (for customPOS access)
 ```
 CREATE USER 'user'@'x.x.x.%'  IDENTIFIED BY 'password'
 GRANT SELECT,UPDATE ON custompos.customer TO 'user'@'x.x.x.%' 
