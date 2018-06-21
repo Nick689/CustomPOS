@@ -8,13 +8,13 @@ REMOTE CONNECT:	mysql -h *serverip* -P *mariadbport* -u root -p
 
 DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql
 
-DUMP:	ssh *user@serverip* -p sshport mysqldump -u root -p custompos > dump.sql
+DUMP:	ssh *user@serverip* -p *sshport* mysqldump -u root -p custompos > dump.sql
 
 LOCAL RESTORE:	mysql -u root -p custompos < dump.sql
 
 REMOTE RESTORE:
 - on client copy dump file to /home/*user*/dump.sql  then:
-  - scp -p sshport dump.sql *user@serverip*:/home/*user*/dump.sql
+  - scp -p *sshport* dump.sql *user@serverip*:/home/*user*/dump.sql
 - on server cd /home/*user*/  then:
   - mysql -u root -p custompos < dump.sql
 
@@ -41,7 +41,7 @@ ssh-copy-id *user@serverip*	(passphrase needed, if no key is found, reload key w
 ### on server
 nano /etc/ssh/sshd_config
 ```
-Port sshport
+Port *sshport*
 Protocol 2
 PubkeyAuthentication yes
 PermitRootLogin no		(before activing this, verify if the user access works)
