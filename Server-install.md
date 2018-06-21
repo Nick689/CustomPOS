@@ -41,7 +41,7 @@ ssh-copy-id *user@serverip*	(passphrase needed, if no key is found, reload key w
 ### on server
 nano /etc/ssh/sshd_config
 ```
-Port *sshport*
+Port [sshport]
 Protocol 2
 PubkeyAuthentication yes
 PermitRootLogin no		(before activing this, verify if the user access works)
