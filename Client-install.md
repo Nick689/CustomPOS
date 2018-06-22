@@ -20,7 +20,7 @@
   - Select "Password is required"
   - Select "register the database", "open for edition"
 
-### Files parameters
+### CALC parameters
 - Adjust LibreOffice security
   Option menu > Security > Macro security > Security Level > Very High
                                           > Trusted sources > Trusted directories > Folder where is CustomPOS.ods
