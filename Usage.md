@@ -1,5 +1,5 @@
 # USAGE AND ADVISES (In construction)
-**Testing** For testing you can use TestingDatas.sql to populate database
+**For testing CustomPOS:** You can use Testing-data.sql to populate database
 
 **Sale scenario (custompos.stk)**
 - senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 1.00)
