@@ -17,6 +17,6 @@
 
 **Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
 
-**Comment**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
+**Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
 
 **Stoping CustomPOS** You don't need to save this document when closing the file, partial cleanup is executed on staing and on closing.
