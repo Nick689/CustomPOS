@@ -19,17 +19,17 @@ CustomPOS main concepts are:
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
 * Advanced pricing management with selectable scenarios for each item
-* Detailed incomes page shows real time incomes of the day or any previous day
+* Detailed incomes page shows real time incomes of today or any previous day
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management based on users database privilege
 * Full database access let you correct any mistake easily
 
  Yes, this is dangerous, the reason for:
-* Invoice-verify module compare invoice details with invoice header to detect data incoherency.
-* STK-verify module compile every sales and entries for each item and compare it with current stock.
+* Invoice-verify module compare invoice details with invoice header to detect data incoherency
+* STK-verify module compile every sales and entries for each item and compare it with current stock
 
 ## Planned features
-* Single user demo version with simple setup will be available later. But instead of waiting the demo, you can install the server  version and use it localy.
+* Single user demo with simplikied install will be available later. But you can install right now the server version and use it localy
 * Localized versions
 * Sales statistics
 
