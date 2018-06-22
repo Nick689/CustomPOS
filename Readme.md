@@ -29,7 +29,7 @@ CustomPOS main concepts are:
 * STK-verify module compile every sales and entries for each item and compare it with current stock
 
 ## Planned features
-* Single user demo with simplikied install will be available later. But you can install right now the server version and use it localy
+* Single user demo with simplified install will be available later. But you can install right now the server version and use it localy
 * Localized versions
 * Sales statistics
 
