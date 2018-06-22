@@ -7,18 +7,16 @@
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
 - senario 2 - Discount can be set freely up to Maxdisc. Public price will be applied when changing customer.
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
-- senario 4 - Promo discount will be applied automaticaly when adding new item, duplicating invoice, public price button pressed, changing customer.
+- senario 4 - Promo discount will be applied when adding item, duplicating invoice, public price button pressed, changing customer.
 
-**Quantity check:**  Instead of forcing stock quantity records without any justification, you can call "stkchk()" stored procedure that will check every sales/arrivals and give you the theoretic quantity and the difference with current quantity for every items.
+**Quantity correction:**  Avoid mofiying quantities directly in stk table, you should make this only when error are detected by Stkchk that will give you theoretical quantity.
 
-**Inventory:**  There is no dedicated inventory module in CustomPOS, however you can adjust quantities by charging special "Inventory" customer with the properly signed quantity, 0 priced (the purpose for the "FREE" button) item you want to adjust.
+**Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account every year and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
 **Stock moving-management:**  See "Inventory", same operation.
 
 **Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
 
-**Special items:**
-- **DIV** is the reference for miscellaneous item, it has editable name and price. You have to define correctly the "misc" constant in "global" library so that the program can retrieve this item in database.
-- **'**  Single quote at the beginning of the name indicate a comment.
+**Comment**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
 
 **Stoping CustomPOS** You don't need to save this document when closing the file, partial cleanup is executed on staing and on closing.
