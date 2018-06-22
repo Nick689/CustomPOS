@@ -19,4 +19,4 @@
 
 **Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
 
-**Stoping CustomPOS** You don't need to save the document when closing CustomPOS, data are allready saved on sever.
+**Stoping CustomPOS:** You don't need to save the document when closing CustomPOS, data are already saved when validing invoice
