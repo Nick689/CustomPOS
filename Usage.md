@@ -5,7 +5,7 @@
 - senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 1.00)
 - senario 0 - Price cannot be under public price. Public price will be applied when changing customer.
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
-- senario 2 - Maxdisc can be applied as you like. Public price will be applied when changing customer.
+- senario 2 - Discount can be set freely up to Maxdisc. Public price will be applied when changing customer.
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
 - senario 4 - Promo discount will be applied automaticaly when adding new item, duplicating invoice, public price button pressed, changing customer.
 
