@@ -8,24 +8,18 @@
   - NTPDATE_USE_NTP_CONF=no
   - NTPSERVERS="yourNTPserverIP"
 - sudo ntpdate *serverip* (to check if you can connect to the server)
-- create a new database in Libreoffice Base:
+- create a new database in Libreoffice Base
   - File menu > New database
   - Connect to an existant database (MySQL)
   - Direct connection
   - Database name: custompos, *IP, port*
   - Select "Password is required"
   - Select "register the database", "open for edition"
-- Adjust LibreOffice security:
+- Adjust LibreOffice security
   Option menu > Security > Macro security > Security Level > Very High
                                           > Trusted sources > Trusted directories > Folder where you placed CustomPOS.ods
 - Adjust parameters in CustomPOS.ods (needed one time, then you can duplicate file)
-  - 
-  - 
-  - 
 - Disable Auto-completion
 - Disable Auto-correction
 - Disable Auto-save
-- Setup shortcut keys:
-  - 
-  - 
-  -
+- Setup shortcut keys
