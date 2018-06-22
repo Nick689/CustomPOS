@@ -1,5 +1,6 @@
 # CLIENT INSTALL (in construction)
 
+### Package install
 - apt-get install libreoffice-calc (if not installed)
 - apt-get install libreoffice-base (if not installed)
 - apt-get install libreoffice-mysql-connector
@@ -8,6 +9,8 @@
   - NTPDATE_USE_NTP_CONF=no
   - NTPSERVERS="yourNTPserverIP"
 - sudo ntpdate *serverip* (to check if you can connect to the server)
+
+### Database connect
 - create a new database in Libreoffice Base
   - File menu > New database
   - Connect to an existant database (MySQL)
@@ -15,6 +18,8 @@
   - Database name: custompos, *IP, port*
   - Select "Password is required"
   - Select "register the database", "open for edition"
+
+### Parameters
 - Adjust LibreOffice security
   Option menu > Security > Macro security > Security Level > Very High
                                           > Trusted sources > Trusted directories > Folder where you placed CustomPOS.ods
