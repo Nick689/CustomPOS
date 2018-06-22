@@ -18,14 +18,15 @@
 - Adjust LibreOffice security:
   Option menu > Security > Macro security > Security Level > Very High
                                           > Trusted sources > Trusted directories > Folder where you placed CustomPOS.ods
+
 - Adjust parameters in CustomPOS.ods (needed one time, then you can duplicate file)
   - 
   - 
-  - Disable Auto-completion
-  - Disable Auto-correction
-  - Disable Auto-save
-  - Setup shortcut keys:
-    - 
-    - 
-    
-  
+  - 
+- Disable Auto-completion
+- Disable Auto-correction
+- Disable Auto-save
+- Setup shortcut keys:
+  - 
+  - 
+  -
