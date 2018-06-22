@@ -11,7 +11,7 @@
 - sudo ntpdate *serverip* (to check if you can connect to the server)
 - Create a new directory where you will place CustomPOS.ods  and Balance.ots
 
-### Database connection
+### Database connection config
 - create a new database in Libreoffice Base
   - File menu > New database
   - Connect to an existant database (MySQL)
