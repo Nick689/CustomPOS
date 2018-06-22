@@ -1,7 +1,7 @@
 # USAGE AND ADVISES (In construction)
 **For testing CustomPOS:** You can use Testing-data.sql to populate database
 
-**Sale scenario (custompos.stk)**:
+**Sale scenario: (in custompos.stk)**
 - senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 1.00)
 - senario 0 - Price cannot be under public price. Public price will be applied when changing customer.
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
@@ -9,7 +9,7 @@
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
 - senario 4 - Promo discount will be applied when adding item, duplicating invoice, public price button pressed, changing customer.
 
-**Quantity correction:**  Avoid mofiying quantities directly in stk table, you should make this only when error are detected by Stkchk that will give you theoretical quantity.
+**Quantity correction:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK to check if there is no issue with factdet table
 
 **Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account every year and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
