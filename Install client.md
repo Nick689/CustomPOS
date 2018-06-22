@@ -12,13 +12,12 @@
 - Create a new directory where you will place CustomPOS.ods  and Balance.ots
 
 ### Database connection config
-- create a new database in Libreoffice Base
-  - File menu > New database
-  - Connect to an existant database (MySQL)
-  - Direct connection
-  - Database name: custompos, *IP, port*
-  - Select "Password is required"
-  - Select "register the database", "open for edition"
+- create a new database in Libreoffice Base: File menu > New database
+- Connect to an existant database (MySQL)
+- Direct connection
+- Database name: custompos, *IP, port*
+- Select "Password is required"
+- Select "register the database", "open for edition"
 
 ### CALC config (optional for testing)
 - Adjust LibreOffice security
