@@ -7,7 +7,7 @@
 - apt-get install ntpdate
 - sudo nano /etc/default/ntpdate
   - NTPDATE_USE_NTP_CONF=no
-  - NTPSERVERS="yourNTPserverIP"
+  - NTPSERVERS="yourServerIP"
 - sudo ntpdate *serverip* (to check if you can connect to the server)
 - Create a new directory where you will place CustomPOS.ods  and Balance.ots
 
