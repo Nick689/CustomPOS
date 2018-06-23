@@ -12,6 +12,7 @@ you can use testing-data.sql to populate database
 
 **Backup:**
 DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql
+
 DUMP:	ssh *user@serverip* -p *sshport* mysqldump -u root -p custompos > dump.sql
 LOCAL RESTORE:	mysql -u root -p custompos < dump.sql
 REMOTE RESTORE:
