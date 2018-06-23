@@ -1,7 +1,7 @@
 (In construction)
 
 # Testing
-you can use Testing-data.sql to populate database
+you can use testing-data.sql to populate database
 
 # Genaral use
 **starting CustomPOS:** For safety reason CustomPOS file can work only if placed in a trusted directory delared in LibreOffice security option.
