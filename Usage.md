@@ -7,7 +7,7 @@
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
 - senario 2 - Discount can be set freely up to Maxdisc. Public price will be applied when changing customer.
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
-- senario 4 - Promo discount will be applied when adding item, duplicating invoice, public price button pressed, changing customer.
+- senario 4 - Promo discount will be applied when adding item, public price button pressed, changing customer.
 
 **Quantity correction:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK to check if there is no issue with factdet table
 
