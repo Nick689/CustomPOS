@@ -1,22 +1,41 @@
-# USAGE AND ADVISES (In construction)
-**For testing CustomPOS:** You can use Testing-data.sql to populate database
+(In construction)
 
+# TESTING CustomPOS
+you can use Testing-data.sql to populate database
+
+# Genaral use
+**starting CustomPOS:** For safety reason CustomPOS file can work only if placed in a trusted directory delared in LibreOffice security option.
+
+**Multi-session:** You can work with unlimited number of secion by duplicating CustomPOS.ods
+
+**Closing CustomPOS:** You don't need to save the document when closing CustomPOS, data are already saved when validating invoice
+
+**Backup:**
+DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql
+DUMP:	ssh *user@serverip* -p *sshport* mysqldump -u root -p custompos > dump.sql
+LOCAL RESTORE:	mysql -u root -p custompos < dump.sql
+REMOTE RESTORE:
+- on client copy dump file to /home/*user*/dump.sql  then:
+  - scp -p *sshport* dump.sql *user@serverip*:/home/*user*/dump.sql
+- on server cd /home/*user*/  then:
+  - mysql -u root -p custompos < dump.sql
+
+
+# POINT OF SALE
 **Sales scenarios: (in custompos.stk)**
-- senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 1.00)
+- senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 0.01)
 - senario 0 - Price cannot be under public price. Public price will be applied when changing customer.
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
 - senario 2 - Discount can be set freely up to Maxdisc. Public price will be applied when changing customer.
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
 - senario 4 - Promo discount will be applied when adding item, public price button pressed, changing customer.
 
-**Quantity correction:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK to check if there is no issue with factdet table
+**Direct Stock adjusting:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK to check if there is no issue with factdet table
 
-**Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account every year and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
+**Stock adjusting, depreciation, edibles, moving out, ... :**  See "Inventory", same operation.
 
-**Stock moving-management:**  See "Inventory", same operation.
+**Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account you can name as you like and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
 **Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
 
 **Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
-
-**Closing CustomPOS:** You don't need to save the document when closing CustomPOS, data are already saved when validating invoice
