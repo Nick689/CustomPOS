@@ -11,10 +11,12 @@ you can use testing-data.sql to populate database
 **Closing CustomPOS:** You don't need to save the document when closing CustomPOS, data are already saved when validating invoice
 
 **Backup:**
-DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql
+DUMP:	mysqldump -h *serverip* -P *mariadbport* -u dump -p custompos > dump.sql (need dump@yourIP grant)
 
 DUMP:	ssh *user@serverip* -p *sshport* mysqldump -u root -p custompos > dump.sql
+
 LOCAL RESTORE:	mysql -u root -p custompos < dump.sql
+
 REMOTE RESTORE:
 - on client copy dump file to /home/*user*/dump.sql  then:
   - scp -p *sshport* dump.sql *user@serverip*:/home/*user*/dump.sql
