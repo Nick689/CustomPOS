@@ -6,7 +6,7 @@ you can use testing-data.sql to populate database
 # Genaral use
 **starting CustomPOS:** For safety reason CustomPOS file can work only if placed in a trusted directory delared in LibreOffice security option.
 
-**Multi-session:** You can work with unlimited number of secion by duplicating CustomPOS.ods
+**Multi-session:** You can work with unlimited number of session by duplicating CustomPOS.ods
 
 **Closing CustomPOS:** You don't need to save the document when closing CustomPOS, data are already saved when validating invoice
 
