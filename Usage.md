@@ -1,6 +1,6 @@
 (In construction)
 
-# TESTING CustomPOS
+# Testing
 you can use Testing-data.sql to populate database
 
 # Genaral use
