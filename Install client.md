@@ -28,7 +28,7 @@
 - Disable Auto-save
 - Setup shortcut keys
 
-### CustomPOS parameters (to set one time, then you can duplicate file)
+### CustomPOS.ods parameters (to set one time, then you can duplicate file)
 - 
 - 
 - 
