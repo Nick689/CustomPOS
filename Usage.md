@@ -1,6 +1,6 @@
 # USAGE (In construction)
 
-### GENERAL USE
+### GENERAL OPERATION
 **starting CustomPOS:** For safety reason you should place CustomPOS.ods in a trusted directory delared in LibreOffice security option and activate high-level security mode
 
 **Multi-session:** You can work with unlimited number of session by duplicating CustomPOS.ods
