@@ -1,7 +1,7 @@
 **(In construction)**
 
 # Genaral use
-**starting CustomPOS:** For safety reason CustomPOS file can work only if placed in a trusted directory delared in LibreOffice security option.
+**starting CustomPOS:** For safety reason you should place CustomPOS.ods in a trusted directory delared in LibreOffice security option and activate high-level security mode
 
 **Multi-session:** You can work with unlimited number of session by duplicating CustomPOS.ods
 
@@ -29,12 +29,12 @@ REMOTE RESTORE:
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
 - senario 4 - Promo discount will be applied when adding item, public price button pressed, changing customer.
 
-**Direct Stock adjusting:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK to check if there is no issue with factdet table
+**Direct Stock adjusting:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK (regularly) to check invoice's datas
 
 **Stock adjusting, depreciation, edibles, moving out, ... :**  See "Inventory", same operation.
 
 **Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account you can name as you like and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
-**Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
-
 **Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
+
+**Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
