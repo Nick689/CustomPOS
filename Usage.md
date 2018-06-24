@@ -1,4 +1,4 @@
-#USAGE (In construction)
+# USAGE (In construction)
 
 ### Genaral use
 **starting CustomPOS:** For safety reason you should place CustomPOS.ods in a trusted directory delared in LibreOffice security option and activate high-level security mode
