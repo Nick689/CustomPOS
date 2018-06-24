@@ -18,6 +18,7 @@
 - Database name: custompos, *IP, port*
 - Select "Password is required"
 - Select "register the database", "open for edition"
+you can modify settings in Option menu > LibreOffice-Base > Databases
 
 ### CALC config (optional for testing)
 - Adjust LibreOffice security
