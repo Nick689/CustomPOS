@@ -33,7 +33,7 @@ REMOTE RESTORE:
 
 **Stock adjusting, depreciation, edibles, moving out, ... :**  See "Inventory", same operation.
 
-**Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account you can name as you like and charge it with $0.00 priced item you want to adjust (the purpose for the "ALL FREE" button).
+**Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account you can name as you like and charge it with $0 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
 **Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
 
