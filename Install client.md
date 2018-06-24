@@ -1,6 +1,6 @@
 # CLIENT INSTALL (in construction)
 
-### Packages install
+### Packages & files install
 - apt-get install libreoffice-calc (if not installed)
 - apt-get install libreoffice-base (if not installed)
 - apt-get install libreoffice-mysql-connector
