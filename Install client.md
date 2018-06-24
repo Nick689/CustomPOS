@@ -11,7 +11,7 @@
 - sudo ntpdate *serverip* (to check if you can connect to the server)
 - Create a new directory where you will place CustomPOS.ods  and Balance.ots
 
-### Database connection config
+### Database connection setting
 - create a new database in Libreoffice-Base: File menu > New database
 - Connect to an existant database (MySQL)
 - Direct connection
@@ -20,7 +20,7 @@
 - Select "register the database", "open for edition"
 you can modify settings in Option menu > LibreOffice-Base > Databases
 
-### CALC config (optional for testing)
+### CALC setting (optional for testing)
 - Adjust LibreOffice security
   Option menu > Security > Macro security > Security Level > Very High
                                           > Trusted sources > Trusted directories > Folder where is CustomPOS.ods
@@ -29,7 +29,7 @@ you can modify settings in Option menu > LibreOffice-Base > Databases
 - Disable Auto-save
 - Setup shortcut keys
 
-### CustomPOS.ods parameters (to set one time, then you can duplicate file)
+### CustomPOS.ods setting (to set one time, then you can duplicate file)
 - 
 - 
 - 
