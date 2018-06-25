@@ -1,7 +1,7 @@
 # USAGE (In construction)
 
 ### GENERAL OPERATION
-**Security:** If you activate macros such as those included in CustomPOS you should also activate one of the security mode in LibreOffice. See details in install-client.
+**Security:** If you activate macros such as those included in CustomPOS you should also activate one of the security mode in LibreOffice. See install-client for details.
 
 **Multi-session:** You can work with unlimited number of session by duplicating CustomPOS.ods
 
