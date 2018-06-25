@@ -45,3 +45,6 @@ Despite CustomPOS's capacity to handle many users, it is not recommended for big
 * Number of reference per item: 6 (can be extended)
 
 Demo version can only manage one user at a time due to the different type of database (HSQLDB) it use.
+
+## Licence
+Macros do not need to be licence. You can use and modify this program as you like. Special thanks to LibreOffice and MariaDB contributors
