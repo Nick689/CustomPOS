@@ -18,7 +18,7 @@ CustomPOS main concepts are:
 * Built-in PDF export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
-* Multi-item combination with special quantity and price can be inserted with one code
+* Multi-item combination handling with one code code insert
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of today or any previous day
 * Data export has never been so easy, you are already in Calc
