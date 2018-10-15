@@ -20,7 +20,7 @@ CustomPOS main concepts are:
 * Shortcut keys allow you to work with keybord only
 * Multi-item combination handling with one code insert
 * Advanced pricing management with selectable scenarios for each item
-* Detailed incomes page shows real time incomes of today or any previous day
+* Detailed incomes page shows real time incomes of the day or any previous day
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management based on users database privilege
 * Full database access let you correct any mistake easily
