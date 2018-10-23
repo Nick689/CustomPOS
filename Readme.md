@@ -5,7 +5,7 @@ You must have guessed that efficiency has leaded customPOS design like in the on
 
 CustomPOS main concepts are:
 - You can easily customize it yourself (you need to know basics about macro, networking and SQL)
-- You are the master of your data: full database access let you correct any mistakes at their origin without polluting your database with correcting records, you can also extract datas for statistic, accounting, etc ...
+- You are the master of your data: full database access let you correct any mistakes at their origin without living correcting records in database, you can also extract datas for statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 .
