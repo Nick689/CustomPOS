@@ -4,7 +4,7 @@ CustomPOS is a retail Point of Sale system based on LibreOffice and mostly progr
 You must have guessed that efficiency has leaded customPOS design like in the one page POS where invoices are recorded after one popup validation only.
 
 CustomPOS main concepts are:
-- You can customize this program yourself. It may need some works for that but the benefit to have full control over your software is priceless, i.e it's free :)
+- You can customize this program yourself. It may need some works to achieve what you want but the benefit to have full control over your software is priceless, i.e it's free :)
 - You are the master of your data: full database access let you correct any mistakes at their origin without living correcting records in database, you can also extract datas for statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
