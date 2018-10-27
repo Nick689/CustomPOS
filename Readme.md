@@ -1,7 +1,7 @@
 ## Description
 CustomPOS is a retail Point of Sale system using LibreOffice Calc as interface. It is mostly programmed with macros which you can customize easily. Spreadsheet have advanced functionality like copy-paste and spreading rarely available in others platform. But don't think CustomPOS is a simple spreadsheet file, it's performance and reliability rely on the underlying database engine (MariaDB).
 
-Efficiency has leaded customPOS design like in the POS module made of one page and where invoices are recorded after one popup validation only.
+Efficiency has leaded customPOS design like in the POS module made of one page only and where invoices are recorded after one popup validation only.
 
 Security has not been forgotten and each action can be restricted by a complex right management
 
