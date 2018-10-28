@@ -3,7 +3,7 @@ CustomPOS is a retail Point of Sale system using LibreOffice Calc as interface a
 
 To achive the highest efficiency the whole POS module consist of only one page where invoices are recorded after one popup validation only.
 
-Security has not been forgotten and each action can be restricted by a advanced right management
+Security has not been forgotten and every module is protected by an advanced right management
 
 CustomPOS main concepts are:
 - You can customize this program yourself. It may need some works to achieve what you want but the benefit to have full control over your software is priceless, i.e it's free :)
