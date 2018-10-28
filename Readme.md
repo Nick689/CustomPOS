@@ -26,8 +26,8 @@ CustomPOS main concepts are:
 * Full database access let you correct any mistake easily
 
  Yes, this is dangerous, the reason for:
-* Invoice-verify module compare invoice details with invoice header to detect data incoherency
-* STK-verify module compile every sales and entries for each item and compare it with current stock
+* Invoice check module which compare invoice's details with invoice's header to detect data incoherency
+* Stock check module which compile every sales and entries for each item and compare it with current stock
 
 ## Planned features
 * A simple install demo version will be available soon. But you can install right now the server version and use it localy
