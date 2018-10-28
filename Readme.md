@@ -41,7 +41,7 @@ Only Linux-French version is currently available. The item edit page does not ex
 Despite CustomPOS's capacity to handle many users, it is not recommended for big companies. You have to consider that LibreOffice has powerful features that cannot all be locked so that advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
-* Max number of sold item: 18446744073709551615 BIGINT(20)  (can be reseted when archiving invoices)
+* Max number of sold item: 18446744073709551615 BIGINT(20)  (can be reseted after invoices archiving)
 * Max number of item per invoice: 100 (limited by mysql connector)
 * Number of reference per item: 6 (can be extended)
 
