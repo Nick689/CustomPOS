@@ -6,8 +6,8 @@ To achive the highest efficiency the whole POS module consist of only one page w
 Security has not been forgotten and every module is protected by an advanced right management
 
 CustomPOS main concepts are:
-- You can customize this program yourself. It may need some works to achieve what you want but the benefit to have full control over your software is priceless, i.e it's free :)
-- You are the master of your data: full database access let you correct any mistakes at their origin without living correcting records in database, you can also extract datas for statistic, accounting, etc ...
+- You can customize this program yourself. Some more work is needed to make localised version but the benefit to have full control over your software is priceless, i.e it's free.  :)   Don't be affraid about apparent program complexity, it integrate advanced pricing scenario you may not need.
+- You are the master of yours datas: full database access let you correct any mistakes at their origin without living correcting records in the database, you can also extract datas for statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 .
