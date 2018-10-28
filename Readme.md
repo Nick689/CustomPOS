@@ -30,7 +30,7 @@ CustomPOS main concepts are:
 * Stock check module which compile every sales and entries for each item and compare it with current stock
 
 ## Planned features
-* A simple install demo version will be available soon. But you can install right now the server version and use it localy
+* A simple install demo version will be available soon. But you can install right now the client-server version and use it localy
 * Localized versions
 * Sales statistics
 
