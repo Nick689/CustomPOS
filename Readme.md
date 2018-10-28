@@ -25,7 +25,7 @@ CustomPOS main concepts are:
 * Advanced user right management based on users database privilege
 * Full database access let you correct any mistake easily
 
- Yes, this is dangerous, the reason for:
+ Yes, this is dangerous, that is why some verification modules are present:
 * Invoice check module which compare invoice's details with invoice's header to detect data incoherency
 * Stock check module which compile every sales and entries for each item and compare it with current stock
 
