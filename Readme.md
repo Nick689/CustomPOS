@@ -10,7 +10,7 @@ CustomPOS main concepts are:
 - You are the master of your data: full database access let you correct any mistakes at their origin without living correcting records in database, you can also extract datas for statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
-↑ Click the button ↑
+Click the link ↑
 
 ## Features
 * Multi-user
