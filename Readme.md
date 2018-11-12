@@ -13,13 +13,13 @@ CustomPOS main concepts are:
 Click the link ↑
 
 ## Features
-* Multi-user
-* Multi-session
+* Multi-users
+* Multi-sessions
 * multi-cell copy-paste -> product insert
+* Multi-item combination insert handling
 * Built-in PDF export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
-* Multi-item combination insert handling
 * Advanced pricing management with selectable scenarios for each item
 * Detailed incomes page shows real time incomes of the day or any previous day
 * Data export has never been so easy, you are already in Calc
