@@ -16,7 +16,7 @@ Click the link ↑
 * Multi-users
 * Multi-sessions
 * multi-cell copy-paste -> product insert
-* Multi-item combination insert handling
+* Multi-item combination insert
 * Built-in PDF export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
