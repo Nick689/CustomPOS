@@ -17,7 +17,7 @@ Click the link ↑
 * Multi-sessions
 * multi-cell copy-paste -> product insert
 * Multi-item combination insert
-* Built-in PDF export
+* Built-in PDF & PNG export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
 * Advanced pricing management with selectable scenarios for each item
