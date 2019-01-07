@@ -1,7 +1,5 @@
 ## Description
-CustomPOS is a retail Point of sale system programed with macro so that you can customize it easily. However it is not a simple spreadsheet file, it's performance and reliability rely on the underlying database engine (MariaDB) allowing multi.-user capabikities in combination with an efficient interface that reduce typing needs to minimal and made of one page only where invoices are recorded after one popup validation only.
-
-Security has not been forgotten and every module is protected by an advanced right management
+CustomPOS is a retail Point of sale system programed with macro so that you can customize it easily. However it is not a simple spreadsheet file, it's performance and reliability rely on the underlying database engine (MariaDB) allowing network multi-user capabilities. The interface has been designed to be the most efficient with reduced typing needs. POS module is made of one page only where invoices are recorded after one popup validation only.
 
 CustomPOS main concepts are:
 - You can customize this program yourself. Some more work is needed to make your localised version but the benefit to have full control over your software is priceless, i.e it's free.  :)   Don't be affraid about the apparent program's complexity, it integrates advanced price management which you may not need and which can be removed.
