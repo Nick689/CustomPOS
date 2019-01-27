@@ -9,8 +9,8 @@ CustomPOS main concepts are:
 Click the link ↑
 
 ## Features
-* Multi-users
-* Multi-sessions
+* Unlimited users number
+* Unlimited sessions number
 * multi-cell copy-paste -> product insert
 * Multi-item combination insert
 * Built-in PDF & PNG export
