@@ -23,8 +23,8 @@ Click the link ↑
 * Full database access (via LibreOffice Base or via SQL request) let you correct any mistake easily
 
  Yes, this is dangerous and it open the door to mistakes that will be detected by the following modules:
-* Invoice check module compare invoice's details with invoice's header and list every incoherency
-* Stock check module compile every sales and entries for each item and compare it with current stock
+* Invoice check module compare invoice's details with invoice's header and list every incoherencies
+* Stock check module compile every sales and entries for each item and compare to current stock
 
 ## Planned features
 * A simple install single user version will be available later but you can install the client-server version for immediate use.
