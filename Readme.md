@@ -17,7 +17,7 @@ Click the link ↑
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
 * Advanced pricing management with selectable scenarios for each item
-* Detailed incomes page shows real time incomes for the day or for any day you want
+* Detailed incomes page shows real time incomes for the day or for any day before
 * Data export has never been so easy, you are already in Calc
 * Advanced user right management based on users database privilege
 * Full database access (via LibreOffice Base or via SQL request) let you correct any mistake easily
