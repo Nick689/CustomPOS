@@ -22,7 +22,7 @@ Click the link ↑
 * Advanced user right management based on users database privilege
 * Full database access (via LibreOffice Base or via SQL request) let you correct any mistake easily
 
- Yes, this is dangerous and it open the door to mistakes who will be detected by these verification modules:
+ Yes, this is dangerous and it open the door to mistakes that will be detected by the following modules:
 * Invoice check module compare invoice's details with invoice's header and list every incoherency
 * Stock check module compile every sales and entries for each item and compare it with current stock
 
