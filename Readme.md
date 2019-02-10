@@ -37,7 +37,7 @@ An item edit page was planned but direct database edit is so practicle that item
 Only main features are currently available. Statistics have to be done externaly. Stability is good without being as good as other classic programs, but don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
 
 ## Limitations
-Despite CustomPOS's capacity to handle many users, it is not recommended for big companies. You have to consider that LibreOffice has powerful features that cannot all be locked so that advanced users can hack it.
+Despite CustomPOS's capability to handle many users, it is not recommended for big companies. You have to consider that LibreOffice has powerful features that cannot all be locked so that advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)  (can be reseted after invoices archiving)
