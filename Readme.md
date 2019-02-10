@@ -11,7 +11,7 @@ Click the link ↑
 ## Features
 * Unlimited users number
 * Unlimited sessions number
-* Data edition can be made with the help of LibreOffice Base with [spreadsheet style](https://github.com/Nick689/CustomPOS/blob/master/Preview/Stk.png) interface
+* Data edition can be made with powerfull [spreadsheet style](https://github.com/Nick689/CustomPOS/blob/master/Preview/Stk.png) database editor
 * Built-in PDF & PNG export
 * Barcode printing (code128 or EAN13)
 * Shortcut keys allow you to work with keybord only
