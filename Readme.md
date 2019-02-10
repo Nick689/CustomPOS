@@ -27,7 +27,7 @@ Click the link ↑
 * Stock check module compile every sales and entries for each item and compare it with current stock
 
 ## Planned features
-* A simple install demo version will be available soon. But you can install right now the client-server version and use it localy
+* A simple install demo version will be available later but you can install the client-server version for immediate use.
 * Localized versions
 * Sales statistics
 
