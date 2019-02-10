@@ -48,4 +48,4 @@ Despite CustomPOS's capability to handle many users, it is not recommended for b
 Demo version can only manage one user at a time due to the different type of database (HSQLDB) it use.
 
 ## Licence
-This macro made program do not need licence. You can use and modify this program as you like. Special thanks to LibreOffice and MariaDB contributors
+This program is free and can be used and modifyed without licence.
