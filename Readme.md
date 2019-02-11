@@ -28,7 +28,7 @@ Click the link ↑
 * Stock check module compile every sales and entries for each item and compare to current stock
 
 ## Planned features
-* A simple install single user version will be available later but you can install the client-server version for immediate use.
+* A single user simple to install version will be available later but you can install the client-server version for immediate use.
 * Localized versions
 * Sales statistics
 
@@ -38,7 +38,7 @@ An item edit page was planned but direct database edit is so practicle that item
 Only main features are currently available. Statistics have to be done externaly. Stability is good without being as good as other classic programs, but don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
 
 ## Limitations
-Despite CustomPOS's capability to handle many users, it is not recommended for big companies. You have to consider that LibreOffice powerful features cannot all be locked and can be hacked by dvanced users.
+Despite CustomPOS's capability to handle many users, it is not recommended for big companies. You have to deal with LibreOffice powerful features that cannot all be locked and advanced users can hack it.
 
 * Max number of invoice: 18446744073709551615 BIGINT(20)
 * Max number of sold item: 18446744073709551615 BIGINT(20)  (can be reseted after invoices archiving)
