@@ -48,4 +48,4 @@ Despite CustomPOS's capability to handle many users, it is not recommended for b
 Demo version can only manage one user at a time due to the different type of database (HSQLDB) it use.
 
 ## Licence
-This program is free and can be used and modifyed without licence.
+This program is free to use and modify.
