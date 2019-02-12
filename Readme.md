@@ -11,7 +11,7 @@ Click the link ↑
 ## Features
 * Unlimited users number
 * Unlimited sessions number
-* 3 ways for product input: one of 6 reference, barcode, and if the first method failed list of product begining with typed letters will be proposed
+* 3 ways for product input: typing one of the 6 reference code, scanning barcode, and if the first method has failed a list of product begining with the typed letters will be proposed
 * Data update can be made with powerfull [spreadsheet style](https://github.com/Nick689/CustomPOS/blob/master/Preview/Stk.png) database editors
 * Built-in PDF & PNG export
 * Barcode printing (code128 or EAN13)
