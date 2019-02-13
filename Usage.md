@@ -47,6 +47,6 @@ REMOTE RESTORE:
 
 **Inventory:**  There is no dedicated inventory module in CustomPOS, you have to create a new account you can name as you like and charge it with $0 priced item you want to adjust (the purpose for the "ALL FREE" button).
 
-**Comment:**  Comment can be added on invoice preceded with one of these characters:  " ' ` _ - ~ #
+**Comment:**  Comment can be added as sold product if preceded with one of these characters:  " ' ` _ - ~ #
 
 **Barcode:**  Linux user have to disable shift key while scanning case sensitive barcode.
