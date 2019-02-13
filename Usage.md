@@ -26,10 +26,10 @@ REMOTE RESTORE:
 
 
 ### POPULATING STOCK
-**Category:** There's no limit to the number of category, but you xould only have to type the number while editing database if use numbered name (start with 01 or 001) like this:
-01 - Underware
-02 - T-shirt
-03 - ...
+**Categories:** There's no limit to the number of category, but you would only have to type the number while editing database if use numbered name (start with 01 or 001) like:  
+01-Underware  
+02-T-shirt  
+03-...
 
 
 ### POINT OF SALE
