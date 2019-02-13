@@ -26,14 +26,12 @@ REMOTE RESTORE:
 
 
 ### POPULATING STOCK
-**Categories:** it use ENUM data type, there's no limit to the number of category, but you would only have to type the number while editing database if use numbered name (start with 01 or 001) like:  
+**Categories:** (ENUM) There's no limit to the number of category, but you would only have to type the number while editing database if use numbered name (start with 01 or 001) like:  
 01-Underware  
 02-T-shirt  
 03-...
 
-
-### POINT OF SALE
-**Sales scenarios:** (to select in stk table)
+**Sales scenarios:** (SMALLINT)
 - senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 0.01)
 - senario 0 - Price cannot be under public price. Public price will be applied when changing customer.
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
@@ -41,6 +39,8 @@ REMOTE RESTORE:
 - senario 3 - Price can be set freely. Public price will be applied when changing customer.
 - senario 4 - Promo discount will be applied when adding item, public price button pressed, changing customer.
 
+
+### POINT OF SALE
 **Direct Stock adjusting:**  Avoid mofiying quantities directly in stk table, you should make this only when an error is detected by STKCHK that will give you theoretical quantity. Before using STKCHK you should use IVCHK (regularly) to check invoice's datas
 
 **Stock adjusting, depreciation, edibles, moving out, ... :**  See "Inventory", same operation.
