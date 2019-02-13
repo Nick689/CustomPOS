@@ -25,8 +25,8 @@ REMOTE RESTORE:
 - Fill a new spreadsheet from an SQL request: CALC > Display menu > Data sources > Request
 
 
-### STOCK POPULATING
-**Category:** There's no limit to the number of category, but would have to type only the number while editing database if use a numbered name starting with 01 like this:
+### POPULATING STOCK
+**Category:** There's no limit to the number of category, but you xould only have to type the number while editing database if use numbered name (start with 01 or 001) like this:
 01 - Underware
 02 - T-shirt
 03 - ...
