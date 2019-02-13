@@ -31,7 +31,7 @@ REMOTE RESTORE:
 02-T-shirt  
 03-...
 
-**Sales scenarios:** (SMALLINT)
+**Sales scenarios:** (TINYINT)
 - senario -1 - Price will never be modified automaticaly. Usefull for Miscelaneous item and other freely fixed item. (IMPORTANT:Set base price to 0.01)
 - senario 0 - Price cannot be under public price. Public price will be applied when changing customer.
 - senario 1 - Discount cannot exceed Maxdisc. Public price will be applied when changing customer.
