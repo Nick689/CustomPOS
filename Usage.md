@@ -26,7 +26,7 @@ REMOTE RESTORE:
 
 
 ### POPULATING STOCK
-**Categories:** There's no limit to the number of category, but you would only have to type the number while editing database if use numbered name (start with 01 or 001) like:  
+**Categories:** it use ENUM data type, there's no limit to the number of category, but you would only have to type the number while editing database if use numbered name (start with 01 or 001) like:  
 01-Underware  
 02-T-shirt  
 03-...
