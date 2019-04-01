@@ -27,7 +27,7 @@ Click the link ↑
 * Advanced user right management based on users database privilege
 * Full database access (via LibreOffice Base or via SQL request) let you correct any mistake easily
 
- Yes, this is dangerous and it open the door to mistakes that will be detected by the following modules:
+ Yes, it is dangerous and it's the open door to mistakes that will be detected by the following modules:
 * Invoice check module compare invoice's details with invoice's header and list every incoherencies
 * Stock check module detect stock error by compiling for each item every input and output
 
