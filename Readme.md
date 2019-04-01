@@ -29,7 +29,7 @@ Click the link ↑
 
  Yes, this is dangerous and it open the door to mistakes that will be detected by the following modules:
 * Invoice check module compare invoice's details with invoice's header and list every incoherencies
-* Stock check module compile every sales and entries for each item and compare to current stock
+* Stock check module detect stock error by compiling for each item every input and output
 
 ## Planned features
 * A single user simple to install version will be available later but you can install the client-server version for immediate use.
