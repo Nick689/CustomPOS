@@ -1,9 +1,9 @@
 ## Description
 CustomPOS is a retail Point of sale system based on LibreOffice and written with macro you can customize easily. Don't think it is a simple spreadsheet file, it has network multi-user capabilities and use proven database engine. Reduced typing needs interface allow great efficiency like in POS module made of one page only where invoices are recorded after one popup.
 
-CustomPOS main concepts are:
+CustomPOS main concepts:
 - You can customize this program easily with only basic programing skill. Some module has to be rewritten to fit yours needs, then you will appreciate full control over your software.
-- You are the master of your data: full database access let you correct any mistakes at their origin without living correcting records in database, you can also extract datas for statistic, accounting, etc ...
+- You are the master of your data: full database access let you do what you want: ecomerce, statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 Click the link ↑
@@ -11,7 +11,10 @@ Click the link ↑
 ## Features
 * Unlimited users number
 * Unlimited sessions number
-* 3 ways for product input: typing one of the 6 reference code, scanning barcode, and if the first method has failed a list of product begining with the typed letters will be proposed
+* 3 ways for product input:
+  - Type one of the 6 reference codes
+  - Scan barcode
+  - If first methods fail a list of similar named product will be proposed
 * Data update can be made with powerfull [spreadsheet style](https://github.com/Nick689/CustomPOS/blob/master/Preview/Stk.png) database editors
 * Built-in PDF & PNG export
 * Barcode printing (code128 or EAN13)
