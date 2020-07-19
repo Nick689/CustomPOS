@@ -41,7 +41,7 @@ Click the link ↑
 
 ## Advancement
 Only Linux-French version is currently available.
-An item edit page was planned but direct database edit is so practicle that item module is canceled.
+Item edit page is not planned anymore, direct database edit has not caused me any trouble till now, but you have to be very carefull.
 Only main features are currently available. Statistics have to be done externaly. Stability is good without being as good as other classic programs, but don't worry, data loss cannot happen with transactional request. Last version is the 0.7. See changelog in Wiki section for versions notes.
 
 ## Limitations
