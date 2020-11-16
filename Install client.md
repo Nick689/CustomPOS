@@ -13,7 +13,7 @@
 
 ### Database connection setting
 - create a new database in Libreoffice-Base: File menu > New database
-- Connect to an existant database (MySQL)
+- Connect to an existing database (MySQL)
 - Direct connection
 - Database name: custompos, *IP, port*
 - Select "Password is required"
@@ -27,7 +27,7 @@ you can modify settings in Option menu > LibreOffice-Base > Databases
 - Disable Auto-completion
 - Disable Auto-correction
 - Disable Auto-save
-- Setup shortcut keys
+- Setup shortcut keys to call related script in Global section
 
 ### CustomPOS.ods setting (to set one time, then you can duplicate file)
 - 
