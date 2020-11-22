@@ -5,8 +5,9 @@ CustomPOS is a retail Point of sale system based on LibreOffice and written with
 
 
 CustomPOS main concepts:
-- You can customize this program easily with only basic programing skill. Some module has to be rewritten to fit yours needs, then you will appreciate full control over your software.
-- You are the master of your data: full database access let you do what you want: e-commerce, statistic, accounting, etc ...
+- You can customize this program easily with basic programing skill. Some module has to be rewritten to fit yours needs, then you will appreciate full control over your software.
+- Database content and organisation is the simplest possible. In combination with full database access it let you manage data in a diferent and more efficient way never see in any other software.
+- You are the master of your data: full database access let you develop new fonction like e-commerce, statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
 Click the link ↑
@@ -14,7 +15,7 @@ Click the link ↑
 ## Features
 * Unlimited users number
 * Unlimited sessions number
-* 3 ways for product input:
+* 3 ways product input:
   - Type one of the 6 reference codes
   - Scan barcode
   - If first methods fail a list of similar named product will be proposed
@@ -25,9 +26,9 @@ Click the link ↑
 * Multi-item combination insert
 * Multi-cell copy-paste allow list insert
 * Advanced pricing management with selectable scenarios for each item
-* Detailed incomes page shows real time incomes for the day or for any day before
+* Detailed incomes page shows real time incomes for today or for any selected day
 * Data export has never been so easy, you are already in Calc
-* Advanced user right management based on users database privilege
+* Advanced user right management
 * Full database access (via LibreOffice Base or via SQL request) let you correct any mistake easily
 
  Yes, it is dangerous and it's the open door to mistakes that will be detected by the following modules:
