@@ -6,7 +6,7 @@ CustomPOS is a retail Point of sale system based on LibreOffice and written with
 
 CustomPOS main concepts:
 - You can customize this program easily with basic programing skill. Some module has to be rewritten to fit yours needs, then you will appreciate full control over your software.
-- Database content and organisation is the simplest possible. In combination with full database access it let you manage data in a diferent and more efficient way never see in any other software.
+- Database content and organisation is the simplest possible. In combination with full database access it let you manage data in a diferent and more efficient way never seen in any other software.
 - You are the master of your data: full database access let you develop new fonction like e-commerce, statistic, accounting, etc ...
 
 ## [Screenshot](https://github.com/Nick689/CustomPOS/blob/master/Preview/ViewAll.md)
