@@ -1,4 +1,4 @@
-## Not working on Debian 10 (see details in wiki)
+## For Debian 9 only (see details in wiki)
 
 ## Description
 CustomPOS is a retail Point of sale system based on LibreOffice and written with macro you can customize easily. Don't think it is a simple spreadsheet file, it has network multi-user capabilities and use proven database engine. Reduced typing needs interface allow great efficiency like in POS module made of one page only where invoices are recorded after one popup.
